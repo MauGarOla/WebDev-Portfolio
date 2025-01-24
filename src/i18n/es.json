@@ -4,7 +4,7 @@
     },
     "about": {
         "title": "Sobre mí",
-        "paragraph": "Tu experiencia (transición de finanzas a programación). Hobbies y valores (resaltando tu conexión con naturaleza, yoga, escalada). Una foto profesional o ilustración tuya. Tus metas (ejemplo: trabajar en proyectos significativos o en Google)"
+        "paragraph": "Tu experiencia (transición de finanzas a programación). Hobbies y <strong>valores</strong> (resaltando tu conexión con naturaleza, yoga, escalada). Una foto profesional o ilustración tuya. Tus metas (ejemplo: trabajar en proyectos significativos o en Google)"
     },
     "skills": {
         "title": "Habilidades",

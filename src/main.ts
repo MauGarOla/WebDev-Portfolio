@@ -1,3 +1,86 @@
+//Light-Dark start
+
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+prefersDarkScheme.addEventListener("change", (e) => {
+  const isDarkMode = e.matches;
+  
+  const savedTheme = localStorage.getItem("theme") as "light" | "dark" | "system";
+  if (savedTheme === "system") {
+    if (isDarkMode) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  }
+});
+
+const setTheme = (theme: "light" | "dark" | "system") => {
+  const body = document.body;
+  
+  body.classList.remove("dark");
+  
+  if (theme === "dark") {
+    body.classList.add("dark");
+  } else if (theme === "system") {
+    if (prefersDarkScheme.matches) {
+      body.classList.add("dark");
+    }
+  }
+  
+  localStorage.setItem("theme", theme);
+};
+
+document.getElementById("light-button")?.addEventListener("click", () => {
+  setTheme("light");
+});
+document.getElementById("dark-button")?.addEventListener("click", () => {
+  setTheme("dark");
+});
+document.getElementById("system-button")?.addEventListener("click", () => {
+  setTheme("system");
+});
+
+const savedTheme = localStorage.getItem("theme") as "light" | "dark" | "system";
+
+if (savedTheme) {
+  setTheme(savedTheme);
+} else {
+  setTheme("system");
+}
+
+//Light-Dark finish
+
+//Color-Selector start
+
+const colorInput = document.getElementById("colorInput") as HTMLInputElement;
+const colorDisplay = document.getElementById("colorDisplay") as HTMLDivElement;
+
+let currentColor = "#000000";
+
+const updateStrongColors = () => {
+  const strongElements = document.querySelectorAll("strong");
+  strongElements.forEach((el) => {
+    (el as HTMLElement).style.color = currentColor;
+  });
+};
+
+const updateColor = (color: string) => {
+  currentColor = color;
+  colorDisplay.style.backgroundColor = color;
+  updateStrongColors();
+};
+
+colorInput.addEventListener("input", (e) => {
+  const target = e.target as HTMLInputElement;
+  const selectedColor = target.value;
+  updateColor(selectedColor);
+});
+
+//Color-Selector finish
+
+//Translations start
+
 interface Translations {
   [key: string]: string | Translations;
 }
@@ -8,7 +91,6 @@ const translations: Record<string, Promise<Translations>> = {
   de: fetch('../src/i18n/de.json').then((res) => res.json())
 };
 
-// Función para buscar claves anidadas en el JSON
 const getNestedValue = (obj: Translations, path: string): string | undefined => {
   return path.split('.').reduce((acc: Translations | string | undefined, key: string) => {
     if (acc && typeof acc === 'object' && key in acc) {
@@ -28,6 +110,8 @@ const applyTranslations = (langData: Translations): void => {
       }
     }
   });
+
+  updateStrongColors();
 };
 
 const setLanguage = async (lang: string): Promise<void> => {
@@ -49,4 +133,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   const savedLang = localStorage.getItem('lang') || 'en';
   const langData = await translations[savedLang];
   applyTranslations(langData);
+
+  updateStrongColors();
 });
+
+//Translations finish

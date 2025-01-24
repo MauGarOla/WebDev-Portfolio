@@ -4,9 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mau G. Olagaray Portfolio</title>
-  <style>
-   
-  </style>
+  <link rel="stylesheet" href="./src/styles/style.css">
 </head>
 <body>
 
@@ -14,9 +12,20 @@
     <button class="lang-switch" data-lang="es">Español</button>
     <button class="lang-switch" data-lang="en">English</button>
     <button class="lang-switch" data-lang="de">Deutsch</button>
+
+    <button id="light-button">Claro</button>
+    <button id="dark-button">Oscuro</button>
+    <button id="system-button">Sistema</button>
+
+    <div class="color-picker">
+      <label for="colorInput">Selecciona un color:</label>
+      <input type="color" id="colorInput" />
+      <div class="color-display" id="colorDisplay"></div>
+    </div>
   </nav>
 
   <section id="hero">
+    <h1>Mauricio G. <strong>Olagaray</strong></h1>
     <h1 data-key="hero.greeting"></h1>
   </section>
 
