@@ -1,20 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/public/logo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mauricio G. Olagaray Porfolio</title>
-  </head>
-  <body>
-    <header id="hero"></header>
-    <main>
-        <section id="about"></section>
-        <section id="skills"></section>
-        <section id="projects"></section>
-        <section id="contact"></section>
-    </main>
-    <footer></footer>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mau G. Olagaray Portfolio</title>
+  <style>
+   
+  </style>
+</head>
+<body>
+
+  <nav>
+    <button class="lang-switch" data-lang="es">Español</button>
+    <button class="lang-switch" data-lang="en">English</button>
+    <button class="lang-switch" data-lang="de">Deutsch</button>
+  </nav>
+
+  <section id="hero">
+    <h1 data-key="hero.greeting"></h1>
+  </section>
+
+  <section id="about">
+    <h2 data-key="about.title"></h2>
+    <p data-key="about.paragraph"></p>
+  </section>
+
+  <section id="skills">
+    <h2 data-key="skills.title"></h2>
+    <p data-key="skills.paragraph"></p>
+  </section>
+
+  <section id="projects">
+    <h2 data-key="projects.title"></h2>
+  </section>
+
+  <section id="contact">
+    <h2 data-key="contact.title"></h2>
+  </section>
+
+  <script src="./src/main.ts" type="module"></script>
+</body>
 </html>

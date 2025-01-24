@@ -1,0 +1,19 @@
+{
+    "hero": {
+        "greeting": "Hi, I'm a <strong>developer</strong> constantly growing. I combine creativity and technology to create <strong>cutting-edge web and mobile applications</strong> that are intuitive and functional."
+    },
+    "about": {
+        "title": "About Me",
+        "paragraph": "Your experience (transition from finance to programming). Hobbies and values (highlighting your connection with nature, yoga, climbing). A professional photo or illustration of yourself. Your goals (e.g., working on meaningful projects or at Google)."
+    },
+    "skills": {
+        "title": "Skills",
+        "paragraph": "Languages and tools (HTML, CSS, JavaScript, React, Next.js, Angular). Libraries or frameworks (GSAP, Three.js, etc.). Soft skills (like teamwork, problem-solving). Graphic representation: bars, icons, or interactive charts."
+    },
+    "projects": {
+        "title": "Projects"
+    },
+    "contact": {
+        "title": "Contact"
+    }
+}

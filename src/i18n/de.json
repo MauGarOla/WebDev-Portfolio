@@ -1,0 +1,19 @@
+{
+    "hero": {
+        "greeting": "Hallo, ich bin ein <strong>Entwickler</strong>, der sich ständig weiterentwickelt. Ich kombiniere Kreativität und Technologie, um <strong>moderne Web- und Mobile-Anwendungen</strong> zu schaffen, die intuitiv und funktional sind."
+    },
+    "about": {
+        "title": "Über mich",
+        "paragraph": "Ihre Erfahrung (Übergang von Finanzen zur Programmierung). Hobbys und Werte (Verbindung zur Natur, Yoga, Klettern). Ein professionelles Foto oder eine Illustration von Ihnen. Ihre Ziele (z. B. an bedeutenden Projekten arbeiten oder bei Google tätig sein)."
+    },
+    "skills": {
+        "title": "Fähigkeiten",
+        "paragraph": "Programmiersprachen und Tools (HTML, CSS, JavaScript, React, Next.js, Angular). Bibliotheken oder Frameworks (GSAP, Three.js usw.). Soft Skills (wie Teamarbeit, Problemlösung). Grafische Darstellung: Balken, Symbole oder interaktive Diagramme."
+    },
+    "projects": {
+        "title": "Projekte"
+    },
+    "contact": {
+        "title": "Kontakt"
+    }
+}
