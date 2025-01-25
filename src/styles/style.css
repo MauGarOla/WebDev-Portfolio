@@ -1,15 +1,33 @@
 /* Default (light theme) */
 body {
-  background-color: #bc3f3f;
-  color: #000000;
+  --background-primary: #F8F9FA;
+  --background-secondary: #E4E8EB80;
+  --text-primary: #2D3748;
+  --secondary: #4A90E2;
+  --action: #6FCF97;
+  --highlight: #FFC857;
 }
 
 /* Dark theme */
 body.dark {
-  background-color: #000000;
-  color: #ffffff;
+  --background-primary: #1A202C;
+  --background-secondary: #2D374880;
+  --text-primary: #E2E8F0;
+  --secondary: #4A90E2;
+  --action: #81E6D9;
+  --highlight: #F6AD55;
 }
 
+body, body.dark {
+  color: var(--text-primary);
+  background: 
+    linear-gradient(135deg, var(--background-secondary) 50%, transparent 0),
+    linear-gradient(-135deg, var(--background-secondary) 50%, transparent 0);
+  background-size: 1.5em 1.5em;
+  background-color: var(--background-primary);
+  margin: 50px auto;
+  width: 60%;
+}
 .color-picker {
   display: flex;
   align-items: center;
@@ -21,7 +39,7 @@ body.dark {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 1px solid #ccc;
+  border: 1px solid var(--action);
 }
 
 strong {

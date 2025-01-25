@@ -56,7 +56,7 @@ if (savedTheme) {
 const colorInput = document.getElementById("colorInput") as HTMLInputElement;
 const colorDisplay = document.getElementById("colorDisplay") as HTMLDivElement;
 
-let currentColor = "#000000";
+let currentColor = "#6FCF97";
 
 const updateStrongColors = () => {
   const strongElements = document.querySelectorAll("strong");
