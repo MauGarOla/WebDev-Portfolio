@@ -8,44 +8,243 @@
 </head>
 <body>
 
-  <nav>
-    <button class="lang-switch" data-lang="es">Español</button>
-    <button class="lang-switch" data-lang="en">English</button>
-    <button class="lang-switch" data-lang="de">Deutsch</button>
+  <figure class="gradient"></figure>
 
-    <button id="light-button">Claro</button>
-    <button id="dark-button">Oscuro</button>
-    <button id="system-button">Sistema</button>
+  <main>
+    <nav>
+      <button class="lang-switch" data-lang="es">Español</button>
+      <button class="lang-switch" data-lang="en">English</button>
+      <button class="lang-switch" data-lang="de">Deutsch</button>
+  
+      <button id="light-button">Claro</button>
+      <button id="dark-button">Oscuro</button>
+      <button id="system-button">Sistema</button>
+  
+      <div class="color-picker">
+        <label for="colorInput">Selecciona un color:</label>
+        <input type="color" id="colorInput" />
+        <div class="color-display" id="colorDisplay"></div>
+      </div>
+    </nav>
+  
+    <!-- Hero Section -->
+    <section id="hero">
+      <h1 data-key="hero.name"></h1>
+      <h2 data-key="hero.title"></h2>
+      <p data-key="hero.description"></p>
+    </section>
 
-    <div class="color-picker">
-      <label for="colorInput">Selecciona un color:</label>
-      <input type="color" id="colorInput" />
-      <div class="color-display" id="colorDisplay"></div>
-    </div>
-  </nav>
+    <!-- About Section -->
+    <section id="about">
+        <h2 data-key="about.section"></h2>
+        <p data-key="about.introduction"></p>
+        <p data-key="about.personal"></p>
+    </section>
 
-  <section id="hero">
-    <h1>Mauricio G. <strong>Olagaray</strong></h1>
-    <h1 data-key="hero.greeting"></h1>
-  </section>
+    <!-- Journey Section -->
+    <section id="journey">
+        <h2 data-key="journey.section"></h2>
 
-  <section id="about">
-    <h2 data-key="about.title"></h2>
-    <p data-key="about.paragraph"></p>
-  </section>
+        <!-- Short Journey -->
+        <div id="journey-short">
+            <h3 data-key="journey.short.section"></h3>
+            <div>
+                <article>
+                    <h4 data-key="journey.short.entries.0.year"></h4>
+                    <h5 data-key="journey.short.entries.0.title"></h5>
+                    <p data-key="journey.short.entries.0.description"></p>
+                </article>
+                <article>
+                  <h4 data-key="journey.short.entries.1.year"></h4>
+                  <h5 data-key="journey.short.entries.1.title"></h5>
+                  <p data-key="journey.short.entries.1.description"></p>
+                </article>
+                <article>
+                  <h4 data-key="journey.short.entries.2.year"></h4>
+                  <h5 data-key="journey.short.entries.2.title"></h5>
+                  <p data-key="journey.short.entries.2.description"></p>
+                </article>
+                <article>
+                  <h4 data-key="journey.short.entries.3.year"></h4>
+                  <h5 data-key="journey.short.entries.3.title"></h5>
+                  <p data-key="journey.short.entries.3.description"></p>
+                </article>
+                <article>
+                  <h4 data-key="journey.short.entries.4.year"></h4>
+                  <h5 data-key="journey.short.entries.4.title"></h5>
+                  <p data-key="journey.short.entries.4.description"></p>
+                </article>
+                <article>
+                  <h4 data-key="journey.short.entries.5.year"></h4>
+                  <h5 data-key="journey.short.entries.5.title"></h5>
+                  <p data-key="journey.short.entries.5.description"></p>
+                </article>
+                <article>
+                  <h4 data-key="journey.short.entries.6.year"></h4>
+                  <h5 data-key="journey.short.entries.6.title"></h5>
+                  <p data-key="journey.short.entries.6.description"></p>
+                </article>
+            </div>
+        </div>
 
-  <section id="skills">
-    <h2 data-key="skills.title"></h2>
-    <p data-key="skills.paragraph"></p>
-  </section>
+        <!-- Long Journey -->
+        <div id="journey-long">
+            <h3 data-key="journey.long.section"></h3>
+            <div>
+                <article>
+                    <h4 data-key="journey.long.entries.0.year"></h4>
+                    <h5 data-key="journey.long.entries.0.title.0"></h5>
+                    <h5 data-key="journey.long.entries.0.title.1"></h5>
+                    <p data-key="journey.long.entries.0.description.0"></p>
+                    <p data-key="journey.long.entries.0.description.1"></p>
+                </article>
+                <article>
+                    <h4 data-key="journey.long.entries.1.year"></h4>
+                    <h5 data-key="journey.long.entries.1.title.0"></h5>
+                    <h5 data-key="journey.long.entries.1.title.1"></h5>
+                    <p data-key="journey.long.entries.1.description.0"></p>
+                    <p data-key="journey.long.entries.1.description.1"></p>
+                </article>
+                <article>
+                    <h4 data-key="journey.long.entries.2.year"></h4>
+                    <h5 data-key="journey.long.entries.2.title.0"></h5>
+                    <h5 data-key="journey.long.entries.2.title.1"></h5>
+                    <p data-key="journey.long.entries.2.description.0"></p>
+                    <p data-key="journey.long.entries.2.description.1"></p>
+                </article>
+                <article>
+                    <h4 data-key="journey.long.entries.3.year"></h4>
+                    <h5 data-key="journey.long.entries.3.title.0"></h5>
+                    <h5 data-key="journey.long.entries.3.title.1"></h5>
+                    <p data-key="journey.long.entries.3.description.0"></p>
+                    <p data-key="journey.long.entries.3.description.1"></p>
+                </article>
+                <article>
+                    <h4 data-key="journey.long.entries.4.year"></h4>
+                    <h5 data-key="journey.long.entries.4.title.0"></h5>
+                    <h5 data-key="journey.long.entries.4.title.1"></h5>
+                    <p data-key="journey.long.entries.4.description.0"></p>
+                    <p data-key="journey.long.entries.4.description.1"></p>
+                </article>
+                <article>
+                    <h4 data-key="journey.long.entries.5.year"></h4>
+                    <h5 data-key="journey.long.entries.5.title.0"></h5>
+                    <h5 data-key="journey.long.entries.5.title.1"></h5>
+                    <p data-key="journey.long.entries.5.description.0"></p>
+                    <p data-key="journey.long.entries.5.description.1"></p>
+                </article>
+                <article>
+                    <h4 data-key="journey.long.entries.6.year"></h4>
+                    <h5 data-key="journey.long.entries.6.title.0"></h5>
+                    <h5 data-key="journey.long.entries.6.title.1"></h5>
+                    <p data-key="journey.long.entries.6.description.0"></p>
+                    <p data-key="journey.long.entries.6.description.1"></p>
+                </article>
+              </div>
+        </div>
+    </section>
 
-  <section id="projects">
-    <h2 data-key="projects.title"></h2>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 data-key="projects.section"></h2>
+        <div>
+            <article>
+                <h3 data-key="projects.entries.0.name"></h3>
+                <p data-key="projects.entries.0.description"></p>
+                <p data-key="projects.entries.0.status"></p>
+                <a data-key="projects.entries.0.link" href="#"></a>
+                <a data-key="projects.entries.0.demo" href="#"></a>
+                <ul>
+                  <li data-key="projects.entries.0.learnings.0"></li>
+                  <li data-key="projects.entries.0.learnings.1"></li>
+                  <li data-key="projects.entries.0.learnings.2"></li>
+                </ul>
+            </article>
+            <article>
+                <h3 data-key="projects.entries.1.name"></h3>
+                <p data-key="projects.entries.1.description"></p>
+                <p data-key="projects.entries.1.status"></p>
+                <a data-key="projects.entries.1.link" href="#"></a>
+                <a data-key="projects.entries.1.demo" href="#"></a>
+                <ul>
+                  <li data-key="projects.entries.1.learnings.0"></li>
+                  <li data-key="projects.entries.1.learnings.1"></li>
+                  <li data-key="projects.entries.1.learnings.2"></li>
+                </ul>
+            </article>
+            <article>
+                <h3 data-key="projects.entries.2.name"></h3>
+                <p data-key="projects.entries.2.description"></p>
+                <p data-key="projects.entries.2.status"></p>
+                <a data-key="projects.entries.2.link" href="#"></a>
+                <a data-key="projects.entries.2.demo" href="#"></a>
+                <ul>
+                  <li data-key="projects.entries.2.learnings.0"></li>
+                  <li data-key="projects.entries.2.learnings.1"></li>
+                  <li data-key="projects.entries.2.learnings.2"></li>
+                </ul>
+            </article>
+            <article>
+                <h3 data-key="projects.entries.3.name"></h3>
+                <p data-key="projects.entries.3.description"></p>
+                <p data-key="projects.entries.3.status"></p>
+                <a data-key="projects.entries.3.link" href="#"></a>
+                <a data-key="projects.entries.3.demo" href="#"></a>
+                <ul>
+                  <li data-key="projects.entries.3.learnings.0"></li>
+                  <li data-key="projects.entries.3.learnings.1"></li>
+                  <li data-key="projects.entries.3.learnings.2"></li>
+                </ul>
+            </article>
+            <article>
+                <h3 data-key="projects.entries.4.name"></h3>
+                <p data-key="projects.entries.4.description"></p>
+                <p data-key="projects.entries.4.status"></p>
+                <a data-key="projects.entries.4.link" href="#"></a>
+                <a data-key="projects.entries.4.demo" href="#"></a>
+                <ul>
+                  <li data-key="projects.entries.4.learnings.0"></li>
+                  <li data-key="projects.entries.4.learnings.1"></li>
+                  <li data-key="projects.entries.4.learnings.2"></li>
+                </ul>
+            </article>
+            <article>
+                <h3 data-key="projects.entries.5.name"></h3>
+                <p data-key="projects.entries.5.description"></p>
+                <p data-key="projects.entries.5.status"></p>
+                <a data-key="projects.entries.5.link" href="#"></a>
+                <a data-key="projects.entries.5.demo" href="#"></a>
+                <ul>
+                  <li data-key="projects.entries.5.learnings.0"></li>
+                  <li data-key="projects.entries.5.learnings.1"></li>
+                  <li data-key="projects.entries.5.learnings.2"></li>
+                </ul>
+            </article>
+            <article>
+                <h3 data-key="projects.entries.6.name"></h3>
+                <p data-key="projects.entries.6.description"></p>
+                <p data-key="projects.entries.6.status"></p>
+                <a data-key="projects.entries.6.link" href="#"></a>
+                <a data-key="projects.entries.6.demo" href="#"></a>
+                <ul>
+                  <li data-key="projects.entries.6.learnings.0"></li>
+                  <li data-key="projects.entries.6.learnings.1"></li>
+                  <li data-key="projects.entries.6.learnings.2"></li>
+                </ul>
+            </article>
+        </div>
+    </section>
 
-  <section id="contact">
-    <h2 data-key="contact.title"></h2>
-  </section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Email: <span data-key="contact.email"></span></p>
+        <p>LinkedIn: <a data-key="contact.linkedin" href="#"></a></p>
+        <p>GitHub: <a data-key="contact.github" href="#"></a></p>
+        <p>Portafolio: <a data-key="contact.portfolio" href="#"></a></p>
+    </section>
+
+  </main>
 
   <script src="./src/main.ts" type="module"></script>
 </body>

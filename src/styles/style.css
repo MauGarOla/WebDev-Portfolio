@@ -1,7 +1,7 @@
 /* Default (light theme) */
 body {
-  --background-primary: #F8F9FA;
-  --background-secondary: #E4E8EB80;
+  --background-primary: #00000000;
+  --background-secondary: #dddddd31;
   --text-primary: #2D3748;
   --secondary: #4A90E2;
   --action: #6FCF97;
@@ -18,16 +18,43 @@ body.dark {
   --highlight: #F6AD55;
 }
 
-body, body.dark {
-  color: var(--text-primary);
-  background: 
-    linear-gradient(135deg, var(--background-secondary) 50%, transparent 0),
-    linear-gradient(-135deg, var(--background-secondary) 50%, transparent 0);
-  background-size: 1.5em 1.5em;
-  background-color: var(--background-primary);
+/* Background */
+
+.gradient {
+  position: absolute;
   margin: 50px auto;
-  width: 60%;
+  max-width: 640px;
+  width: 90%;
+  height: 100%;
+  inset: 0;
+  pointer-events: none;
+  filter: blur(100px) saturate(150%);
+  opacity: 0.15;
+  background-image: 
+  radial-gradient(at 27% 37%,hsla(215, 98%, 61%, 1) 0px, transparent 0%),
+  radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%),
+  radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
+  radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
+  radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%),
+  radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
+  radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%);
 }
+
+body, body.dark {
+  --grid-size: 100px;
+  --grid: #00000000 90deg,var(--background-secondary) 0;
+  background: 
+    conic-gradient(from 90deg at .75px .75px,var(--grid)),
+    conic-gradient(from 90deg at .25px .25px,var(--grid)),
+    var(--background-primary);
+  background-size: var(--grid-size) var(--grid-size), calc(var(--grid-size)/10) calc(var(--grid-size)/10);
+  color: var(--text-primary);
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Color Picker */
+
 .color-picker {
   display: flex;
   align-items: center;
@@ -45,3 +72,16 @@ body, body.dark {
 strong {
   font-weight: bold;
 }
+
+/* Content */
+
+main {
+ max-width: 900px;
+ width: 80%;
+ margin: 50px auto;
+}
+
+/* Navbar */
+
+
+
