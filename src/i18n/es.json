@@ -1,7 +1,7 @@
 {
     "hero": {
-      "name": "<strong>Mauricio G. Olagaray</strong>",
-      "title": "<strong>Desarrollador Web</strong>",
+      "name": "<strong>Mauricio <br>G. Olagaray</strong>",
+      "title": "Desarrollador web apasionado por crear experiencias digitales funcionales y atractivas.",
       "description": "Soy un <strong>desarrollador web</strong> con una mentalidad <strong>analítica</strong> y <strong>creativa</strong>, apasionado por construir aplicaciones que <strong>resuelvan problemas reales</strong> y mejoren la vida de las personas. Mi enfoque combina <strong>tecnología</strong>, <strong>diseño intuitivo</strong> y <strong>eficiencia en el código</strong>."
     },
     "about": {
