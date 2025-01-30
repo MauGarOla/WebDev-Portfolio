@@ -12,19 +12,21 @@
 
   <main>
     <nav>
-      <button class="lang-switch" data-lang="es">Español</button>
-      <button class="lang-switch" data-lang="en">English</button>
-      <button class="lang-switch" data-lang="de">Deutsch</button>
-  
-      <button id="light-button">Claro</button>
-      <button id="dark-button">Oscuro</button>
-      <button id="system-button">Sistema</button>
-  
-      <div class="color-picker">
-        <label for="colorInput">Selecciona un color:</label>
+      <section class="nav-lang-switch">
+        <button class="lang-switch" data-lang="en">EN</button>
+        <button class="lang-switch" data-lang="de">DE</button>
+        <button class="lang-switch" data-lang="es">ES</button>
+      </section>
+      
+      <section class="color-picker">
         <input type="color" id="colorInput" />
-        <div class="color-display" id="colorDisplay"></div>
-      </div>
+      </section>
+
+      <section class="nav-theme-switch">
+        <button id="light-button">☀︎</button>
+        <button id="dark-button">☽</button>
+        <button id="system-button">⚇</button>
+      </section>
     </nav>
   
     <!-- Hero Section -->

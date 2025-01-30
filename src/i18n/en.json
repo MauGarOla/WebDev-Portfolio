@@ -1,19 +1,230 @@
 {
     "hero": {
-        "greeting": "Hi, I'm a <strong>developer</strong> constantly growing. I combine creativity and technology to create <strong>cutting-edge web and mobile applications</strong> that are intuitive and functional."
+      "name": "<strong>Mauricio G. Olagaray</strong>",
+      "title": "<strong>Desarrollador Web</strong>",
+      "description": "I am a<strong>Web dev</strong> con una mentalidad <strong>analítica</strong> y <strong>creativa</strong>, apasionado por construir aplicaciones que <strong>resuelvan problemas reales</strong> y mejoren la vida de las personas. Mi enfoque combina <strong>tecnología</strong>, <strong>diseño intuitivo</strong> y <strong>eficiencia en el código</strong>."
     },
     "about": {
-        "title": "About Me",
-        "paragraph": "Your experience (transition from finance to programming). Hobbies and values (highlighting your connection with nature, yoga, climbing). A professional photo or illustration of yourself. Your goals (e.g., working on meaningful projects or at Google)."
+        "section": "Sobre mi",
+      "introduction": "Mi formación en <strong>Finanzas</strong> me dio una base <strong>analítica</strong> sólida, pero encontré mi verdadera <strong>pasión</strong> en la <strong>tecnología</strong>. Ahora, combino ambos mundos para desarrollar <strong>soluciones digitales eficientes</strong>, con un enfoque en <strong>datos</strong> y <strong>optimización de procesos</strong>.",
+      "personal": "Fuera del código, disfruto la <strong>calistenia</strong>, el <strong>yoga</strong> y explorar la <strong>naturaleza</strong>, actividades que me ayudan a mantener el <strong>equilibrio</strong> entre <strong>mente y cuerpo</strong>. Mi meta es seguir <strong>creciendo</strong> como <strong>desarrollador</strong>, crear <strong>proyectos innovadores</strong> y, algún día, <strong>trabajar en Google</strong> para llevar mis habilidades al <strong>siguiente nivel</strong>."
     },
-    "skills": {
-        "title": "Skills",
-        "paragraph": "Languages and tools (HTML, CSS, JavaScript, React, Next.js, Angular). Libraries or frameworks (GSAP, Three.js, etc.). Soft skills (like teamwork, problem-solving). Graphic representation: bars, icons, or interactive charts."
+    "journey": {
+        "section": "Trayectoria",
+      "short": {
+        "section": "Resumen",
+        "entries": 
+        [{
+          "year": "Por venir",
+          "title": "Más allá del código ✨",
+          "description": "Mi objetivo es formar parte de Google, combinando creatividad y tecnología para desarrollar soluciones con impacto global. Busco equilibrar mi vida profesional con mis pasiones: yoga, escalada y calistenia."
+        },
+        {
+          "year": "2025",
+          "title": "<strong>Preparándome para el siguiente nivel 🚀</strong>",
+          "description": "Estoy trabajando en <strong>proyectos</strong>, buscando las <strong>soluciones óptimas</strong> a problemas y desarrollando <strong>aplicaciones</strong> con <strong>TypeScript</strong>, <strong>Go</strong> y <strong>Swift</strong>, sin dejar de explorar <strong>nuevas tecnologías</strong>."
+        },
+        {
+          "year": "2023 - 2024",
+          "title": "<strong>Inmersión en el desarrollo web 🌐</strong>",
+          "description": "Dominé <strong>Next.js</strong>, <strong>Angular</strong>, <strong>TypeScript</strong> y <strong>Go</strong>, desarrollé una <strong>app de finanzas personales</strong> y trabajé como <strong>freelance</strong> en <strong>On-running</strong> y practicante en <strong>BMW Group</strong>."
+        },
+        {
+          "year": "2021 - 2022",
+          "title": "<strong>Descubriendo la programación 🔍</strong>",
+          "description": "Desde mi experiencia en finanzas, descubrí cómo la tecnología optimiza procesos. Como <strong>Desarrollador en Disfruta</strong>, creé sistemas para gestión de productos, pedidos y logística."
+        },
+        {
+          "year": "2018 - 2023",
+          "title": "<strong>Finanzas y Negocios 💼</strong>",
+          "description": "Experiencia en Gabrica, Keller Williams y Ziel (fondo de inversión), adquiriendo habilidades en <strong>análisis, gestión y comunicación.</strong>"
+        },
+        {
+          "year": "2019 - 2022",
+          "title": "<strong>Universidad Anáhuac 🎓</strong>",
+          "description": "Estudié Finanzas y Contaduría Pública, desarrollando habilidades analíticas y resolución de problemas empresariales."
+        },
+        {
+          "year": "2018",
+          "title": "<strong>Colegio Alemán 🇩🇪</strong>",
+          "description": "Formación internacional que me dio disciplina y visión global."
+        }
+        ]
+        },
+      "long": {
+        "section": "Detallada",
+        "entries": 
+        [
+            {
+            "year": "Futuro",
+            "title": [
+                "<strong>Más allá del código ✨</strong>",
+                "Un futuro lleno de posibilidades"
+            ],
+            "description": [
+                "Mi <strong>meta</strong> es formar parte de <strong>Google</strong> y contribuir a un equipo <strong>internacional</strong> que combine <strong>creatividad</strong> y <strong>tecnología</strong>. Aspiro a desarrollar <strong>soluciones</strong> que impacten positivamente a las personas, sin perder el <strong>equilibrio</strong> entre mi <strong>vida profesional</strong> y mis <strong>pasiones</strong>: el <strong>yoga</strong>, la <strong>escalada</strong> y la <strong>calistenia</strong>.",
+                "Cada paso que doy me acerca más a ese objetivo. Esto es solo el comienzo."
+            ]
+            },
+            {
+            "year": "2025",
+            "title": [
+                "<strong>Preparándome para el siguiente nivel 🚀</strong>",
+                "Ampliando mis horizontes"
+            ],
+            "description": [
+                "Actualmente estoy desarrollando proyectos personales y a terceros. Buscando las soluciones optimas a problemas con <strong>TypeScript, Go y Swift.</strong> Me mantengo explorando nuevas tecnologías y actualizaciones para estar siempre a la vanguardia."
+            ]
+            },
+            {
+            "year": "2023 - 2024",
+            "title": [
+                "<strong>Inmersión en el Desarrollo Web 🌐</strong>",
+                "Un nuevo comienzo técnico"
+            ],
+            "description": [
+                "Durante este periodo, me sumergí por completo en el desarrollo web, dominando tecnologías como Next.js, Angular, TypeScript y Go. Como parte de mi crecimiento, creé una aplicación de finanzas personales, combinando mis conocimientos financieros con mis habilidades técnicas.", 
+                "Además, tuve la oportunidad adquirir experiencia práctica en la industria tecnológica: Freelance en On-running: Desarrollo de soluciones digitales innovadoras. Practicante en BMW Group: Implementación de herramientas tecnológicas para optimizar procesos empresariales."
+            ]
+            },
+            {
+            "year": "2021 - 2022",
+            "title": [
+                "<strong>Descubriendo la programación 🔍</strong>",
+                "El momento de cambio"
+            ],
+            "description": [
+                "Mientras trabajaba como Accounting Assistant en Angel Venture, descubrí cómo la programación podía automatizar procesos y simplificar tareas repetitivas. Este hallazgo despertó mi curiosidad y me llevó a explorar el mundo del desarrollo.",
+                "Más tarde, en mi rol como Desarrollador en Disfruta, creé sistemas web para optimizar la gestión de catálogos de productos, pedidos y logística. Esta experiencia me permitió conectar mi formación en finanzas con el potencial de la tecnología."
+            ]
+            },
+            {
+            "year": "2018 - 2023",
+            "title": [
+                "<strong>Mi camino en Finanzas y Negocios 💼</strong>",
+                "Experiencia en diversas áreas"
+            ],
+            "description": [
+                "Mi trayectoria en el mundo financiero me brindó habilidades clave en análisis, gestión y comunicación: General Assistant en Gabrica: Supervisión de transacciones financieras y análisis de presupuestos. Real Estate Advisor en Keller Williams: Desarrollo de estrategias personalizadas para clientes y creación de materiales visuales innovadores. Fundador de Ziel: Gestión de un fondo de inversión, análisis de riesgos y comunicación efectiva con clientes en un entorno dinámico."
+            ]
+            },
+            {
+            "year": "2019 - 2022",
+            "title": [
+                "<strong>Título en Finanzas y Contaduría Pública 🎓</strong>",
+                "Explorando el mundo financiero"
+            ],
+            "description": [
+                "Mientras estudiaba en la Universidad Anáhuac, desarrollé un fuerte interés por los datos y la estructura financiera. Estos años me brindaron no solo conocimientos técnicos, sino también habilidades analíticas para resolver problemas empresariales complejos."
+            ]
+            },
+            {
+            "year": "2018",
+            "title": [
+                "<strong>Graduación del Colegio Alemán 🇩🇪</strong>",
+                "Un comienzo internacional"
+            ],
+            "description": [
+                "Mi formación en el Colegio Alemán me dio una mentalidad global y una base sólida en disciplina y organización, elementos clave que han guiado mi camino académico y profesional.", "Este viaje apenas comienza. Con cada desafío, me acerco más a mi meta: combinar creatividad, tecnología y estrategia para generar impacto en el mundo. 🚀✨"
+            ]
+            }
+            
+        ]
+        }
     },
     "projects": {
-        "title": "Projects"
+        "section": "Proyectos",
+        "entries": [
+      {
+        "name": "<strong>Tiny Piano</strong>",
+        "description": "Un <strong>pequeño piano interactivo</strong> que permite reproducir sonidos al hacer clic en las teclas.",
+        "status": "<strong>Terminado</strong>",
+        "link": "<strong>Repositorio en GitHub</strong>",
+        "demo": "No disponible",
+        "learnings": [
+            "* Creación de elementos interactivos con eventos de JavaScript.",
+            "* Uso de CSS para personalizar un diseño visualmente atractivo.",
+            "* Manipulación del DOM para integrar interactividad."
+        ]
+      },
+      {
+        "name": "<strong>Garage Sale</strong>",
+        "description": "Una página web diseñada para visualizar los artículos restantes de una venta de garaje. Construida con Astro para un rendimiento optimizado.",
+        "status": "<strong>Terminado</strong>",
+        "link": "<strong>Repositorio en GitHub</strong>",
+        "demo": "No disponible",
+        "learnings": [
+            "* Uso de Astro para construir páginas rápidas y ligeras.",
+            "* Optimización de interfaces para listas dinámicas.",
+            "* Diseño adaptativo para experiencias en dispositivos móviles."
+        ]
+      },
+      {
+        "name": "<strong>CSS Daily Challenge</strong>",
+        "description": "Una colección de retos diarios de CSS, creados con HTML, CSS y JavaScript. Los retos fueron organizados en un sitio hecho con Astro.",
+        "status": "<strong>Terminado</strong>",
+        "link": "<strong>Repositorio en GitHub</strong>",
+        "demo": "No disponible",
+        "learnings": [
+            "* Mejora de habilidades en diseño con CSS, incluyendo animaciones y layouts complejos.",
+            "* Resolución de problemas pequeños en un entorno web.",
+            "* Organización de múltiples proyectos en una plataforma central."
+        ]
+      },
+      {
+        "name": "<strong>Go Daily Challengee</strong>",
+        "description": "Retos enfocados en el lenguaje de programación Go para resolver problemas y construir pequeños proyectos.",
+        "status": "<strong>Terminado</strong>",
+        "link": "<strong>Repositorio en GitHub</strong>",
+        "demo": "No disponible",
+        "learnings": [
+            "* Comprensión de conceptos básicos y avanzados del lenguaje Go.",
+            "* Estructuración de proyectos pequeños y su escalabilidad.",
+            "* Uso de Go para manejar concurrencia y operaciones eficientes."
+        ]
+      },
+      {
+        "name": "<strong>Proyecto de Finanzas Personales</strong>",
+        "description": "Una aplicación para gestionar finanzas personales, desarrollada con Next.js y Tailwind CSS.",
+        "status": "<strong>Terminado</strong>",
+        "link": "<strong>Repositorio en GitHub</strong>",
+        "demo": "No disponible",
+        "learnings": [
+            "* Integración de Tailwind para la creación rápida de estilos responsivos.",
+            "* Uso de Next.js para la construcción de aplicaciones server-side.",
+            "* Diseño de estructuras de datos para manejar categorías, cuentas y eventos financieros."
+        ]
+      },
+      {
+        "name": "<strong>Life Mapper</strong>",
+        "description": "Una aplicación móvil para registrar eventos diarios, con categorías y hábitos personalizables. Desarrollada en Swift para iOS y con un backend en Go.",
+        "status": "<strong>Terminado</strong>",
+        "link": "<strong>Repositorio en GitHub</strong>",
+        "demo": "No disponible",
+        "learnings": [
+            "* Implementación de bases de datos para sincronizar información entre cliente y servidor.",
+            "* Uso de Swift para desarrollar una interfaz de usuario nativa y fluida.",
+            "* Diseño de APIs RESTful con Go para manejar datos de forma eficiente."
+        ]
+      },
+      {
+        "name": "<strong>Angular Daily Challenge</strong>",
+        "description": "Serie de retos pequeños para aprender Angular, enfocados en el uso de componentes, servicios y manejo del estado.",
+        "status": "<strong>Terminado</strong>",
+        "link": "<strong>Repositorio en GitHub</strong>",
+        "demo": "No disponible",
+        "learnings": [
+            "* Configuración inicial de proyectos Angular y manejo de CLI.",
+            "* Creación de componentes dinámicos e interactivos.",
+            "* Uso de servicios para manejar datos y eventos entre componentes."
+        ]
+      }
+    ]
     },
     "contact": {
-        "title": "Contact"
+      "email": "<strong>mauricio@example.com</strong>",
+      "linkedin": "<strong>https://www.linkedin.com/in/mauricioolagaray/</strong>",
+      "github": "<strong>https://github.com/mauricioolagaray</strong>",
+      "portfolio": "<strong>https://mauricioolagaray.com</strong>"
     }
-}
+  }
