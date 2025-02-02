@@ -138,103 +138,135 @@
 
         <input type="checkbox" id="journey-switcher">
 
+        <label class="journey-zoom" for="journey-switcher">
+          <img src="src/assets/images/zoom.png" alt="Zoom in and out">
+        </label>
+
         <!-- Short Journey -->
-        <div id="journey-short">
+        <section id="journey-short">
             <h3 data-key="journey.short.section"></h3>
-            <div>
-                <article>
-                    <h4 data-key="journey.short.entries.0.year"></h4>
-                    <h5 data-key="journey.short.entries.0.title"></h5>
-                    <p data-key="journey.short.entries.0.description"></p>
-                </article>
-                <article>
-                  <h4 data-key="journey.short.entries.1.year"></h4>
-                  <h5 data-key="journey.short.entries.1.title"></h5>
-                  <p data-key="journey.short.entries.1.description"></p>
-                </article>
-                <article>
-                  <h4 data-key="journey.short.entries.2.year"></h4>
-                  <h5 data-key="journey.short.entries.2.title"></h5>
-                  <p data-key="journey.short.entries.2.description"></p>
-                </article>
-                <article>
-                  <h4 data-key="journey.short.entries.3.year"></h4>
-                  <h5 data-key="journey.short.entries.3.title"></h5>
-                  <p data-key="journey.short.entries.3.description"></p>
-                </article>
-                <article>
-                  <h4 data-key="journey.short.entries.4.year"></h4>
-                  <h5 data-key="journey.short.entries.4.title"></h5>
-                  <p data-key="journey.short.entries.4.description"></p>
-                </article>
-                <article>
-                  <h4 data-key="journey.short.entries.5.year"></h4>
-                  <h5 data-key="journey.short.entries.5.title"></h5>
-                  <p data-key="journey.short.entries.5.description"></p>
-                </article>
-                <article>
-                  <h4 data-key="journey.short.entries.6.year"></h4>
-                  <h5 data-key="journey.short.entries.6.title"></h5>
-                  <p data-key="journey.short.entries.6.description"></p>
-                </article>
-            </div>
-        </div>
+            <ul class="journey-short-data">
+                <li>
+                    <h4 class="journey-date" data-key="journey.short.entries.0.year"></h4>
+                    <h5 class="journey-title" data-key="journey.short.entries.0.title"></h5>
+                    <p class="journey-text" data-key="journey.short.entries.0.description"></p>
+                </li>
+                <li>
+                  <h4 class="journey-date" data-key="journey.short.entries.1.year"></h4>
+                  <h5 class="journey-title" data-key="journey.short.entries.1.title"></h5>
+                  <p class="journey-text" data-key="journey.short.entries.1.description"></p>
+                </li>
+                <li>
+                  <h4 class="journey-date" data-key="journey.short.entries.2.year"></h4>
+                  <h5 class="journey-title" data-key="journey.short.entries.2.title"></h5>
+                  <p class="journey-text" data-key="journey.short.entries.2.description"></p>
+                </li>
+                <li>
+                  <h4 class="journey-date" data-key="journey.short.entries.3.year"></h4>
+                  <h5 class="journey-title" data-key="journey.short.entries.3.title"></h5>
+                  <p class="journey-text" data-key="journey.short.entries.3.description"></p>
+                </li>
+                <li>
+                  <h4 class="journey-date" data-key="journey.short.entries.4.year"></h4>
+                  <h5 class="journey-title" data-key="journey.short.entries.4.title"></h5>
+                  <p class="journey-text" data-key="journey.short.entries.4.description"></p>
+                </li>
+                <li>
+                  <h4 class="journey-date" data-key="journey.short.entries.5.year"></h4>
+                  <h5 class="journey-title" data-key="journey.short.entries.5.title"></h5>
+                  <p class="journey-text" data-key="journey.short.entries.5.description"></p>
+                </li>
+                <li>
+                  <h4 class="journey-date" data-key="journey.short.entries.6.year"></h4>
+                  <h5 class="journey-title" data-key="journey.short.entries.6.title"></h5>
+                  <p class="journey-text" data-key="journey.short.entries.6.description"></p>
+                </li>
+            </ul>
+        </section>
 
         <!-- Long Journey -->
-        <div id="journey-long">
+        <section id="journey-long">
             <h3 data-key="journey.long.section"></h3>
-            <div>
-                <article>
-                    <h4 data-key="journey.long.entries.0.year"></h4>
-                    <h5 data-key="journey.long.entries.0.title.0"></h5>
-                    <h5 data-key="journey.long.entries.0.title.1"></h5>
-                    <p data-key="journey.long.entries.0.description.0"></p>
-                    <p data-key="journey.long.entries.0.description.1"></p>
-                </article>
-                <article>
-                    <h4 data-key="journey.long.entries.1.year"></h4>
-                    <h5 data-key="journey.long.entries.1.title.0"></h5>
-                    <h5 data-key="journey.long.entries.1.title.1"></h5>
-                    <p data-key="journey.long.entries.1.description.0"></p>
-                    <p data-key="journey.long.entries.1.description.1"></p>
-                </article>
-                <article>
-                    <h4 data-key="journey.long.entries.2.year"></h4>
-                    <h5 data-key="journey.long.entries.2.title.0"></h5>
-                    <h5 data-key="journey.long.entries.2.title.1"></h5>
-                    <p data-key="journey.long.entries.2.description.0"></p>
-                    <p data-key="journey.long.entries.2.description.1"></p>
-                </article>
-                <article>
-                    <h4 data-key="journey.long.entries.3.year"></h4>
-                    <h5 data-key="journey.long.entries.3.title.0"></h5>
-                    <h5 data-key="journey.long.entries.3.title.1"></h5>
-                    <p data-key="journey.long.entries.3.description.0"></p>
-                    <p data-key="journey.long.entries.3.description.1"></p>
-                </article>
-                <article>
-                    <h4 data-key="journey.long.entries.4.year"></h4>
-                    <h5 data-key="journey.long.entries.4.title.0"></h5>
-                    <h5 data-key="journey.long.entries.4.title.1"></h5>
-                    <p data-key="journey.long.entries.4.description.0"></p>
-                    <p data-key="journey.long.entries.4.description.1"></p>
-                </article>
-                <article>
-                    <h4 data-key="journey.long.entries.5.year"></h4>
-                    <h5 data-key="journey.long.entries.5.title.0"></h5>
-                    <h5 data-key="journey.long.entries.5.title.1"></h5>
-                    <p data-key="journey.long.entries.5.description.0"></p>
-                    <p data-key="journey.long.entries.5.description.1"></p>
-                </article>
-                <article>
-                    <h4 data-key="journey.long.entries.6.year"></h4>
-                    <h5 data-key="journey.long.entries.6.title.0"></h5>
-                    <h5 data-key="journey.long.entries.6.title.1"></h5>
-                    <p data-key="journey.long.entries.6.description.0"></p>
-                    <p data-key="journey.long.entries.6.description.1"></p>
-                </article>
-              </div>
-        </div>
+            <ul>
+                <li>
+                    <h4 class="journey-date" data-key="journey.long.entries.0.year"></h4>
+                    <section class="journey-title">
+                      <h5 data-key="journey.long.entries.0.title.0"></h5>
+                      <h5 data-key="journey.long.entries.0.title.1"></h5>
+                    </section>
+                    <section class="journey-text">
+                      <p data-key="journey.long.entries.0.description.0"></p>
+                      <p data-key="journey.long.entries.0.description.1"></p>
+                    </section>
+                </li>
+                <li>
+                    <h4 class="journey-date" data-key="journey.long.entries.1.year"></h4>
+                    <section class="journey-title">
+                      <h5 data-key="journey.long.entries.1.title.0"></h5>
+                      <h5 data-key="journey.long.entries.1.title.1"></h5>
+                    </section>
+                    <section class="journey-text">
+                      <p data-key="journey.long.entries.1.description.0"></p>
+                      <p data-key="journey.long.entries.1.description.1"></p>
+                    </section>
+                </li>
+                <li>
+                    <h4 class="journey-date" data-key="journey.long.entries.2.year"></h4>
+                    <section class="journey-title">
+                      <h5 data-key="journey.long.entries.2.title.0"></h5>
+                      <h5 data-key="journey.long.entries.2.title.1"></h5>
+                    </section>
+                    <section class="journey-text">
+                      <p data-key="journey.long.entries.2.description.0"></p>
+                      <p data-key="journey.long.entries.2.description.1"></p>
+                    </section>
+                </li>
+                <li>
+                    <h4 class="journey-date" data-key="journey.long.entries.3.year"></h4>
+                    <section class="journey-title">
+                      <h5 data-key="journey.long.entries.3.title.0"></h5>
+                      <h5 data-key="journey.long.entries.3.title.1"></h5>
+                    </section>
+                    <section class="journey-text">
+                      <p data-key="journey.long.entries.3.description.0"></p>
+                      <p data-key="journey.long.entries.3.description.1"></p>
+                    </section>
+                </li>
+                <li>
+                    <h4 class="journey-date" data-key="journey.long.entries.4.year"></h4>
+                    <section class="journey-title">
+                      <h5 data-key="journey.long.entries.4.title.0"></h5>
+                      <h5 data-key="journey.long.entries.4.title.1"></h5>
+                    </section>
+                    <section class="journey-text">
+                      <p data-key="journey.long.entries.4.description.0"></p>
+                      <p data-key="journey.long.entries.4.description.1"></p>
+                    </section>
+                </li>
+                <li>
+                    <h4 class="journey-date" data-key="journey.long.entries.5.year"></h4>
+                    <section class="journey-title">
+                      <h5 data-key="journey.long.entries.5.title.0"></h5>
+                      <h5 data-key="journey.long.entries.5.title.1"></h5>
+                    </section>
+                    <section class="journey-text">
+                      <p data-key="journey.long.entries.5.description.0"></p>
+                      <p data-key="journey.long.entries.5.description.1"></p>
+                    </section>
+                </li>
+                <li>
+                    <h4 class="journey-date" data-key="journey.long.entries.6.year"></h4>
+                    <section class="journey-title">
+                      <h5 data-key="journey.long.entries.6.title.0"></h5>
+                      <h5 data-key="journey.long.entries.6.title.1"></h5>
+                    </section>
+                    <section class="journey-text">
+                      <p data-key="journey.long.entries.6.description.0"></p>
+                      <p data-key="journey.long.entries.6.description.1"></p>
+                    </section>
+                </li>
+              </ul>
+        </section>
     </section>
 
     <!-- Projects Section -->

@@ -3,7 +3,7 @@
 
 /* Default (light theme) */
 body {
-  --background-primary: #00000000;
+  --background-primary: #ffffff;
   --background-secondary: #dddddd31;
   --text-primary: #2D3748;
   --secondary: #4A90E2;
@@ -79,6 +79,10 @@ h1 {
 
 h2 {
   font-size: clamp(1.5rem, 5vw, 4rem);
+}
+
+h3 {
+  font-size: clamp(1.2rem, 4vw, 3rem);
 }
 
 /* Navbar */
@@ -247,3 +251,194 @@ button:hover, button:active {
 }
 
 /* Journey */
+
+#journey {
+  position: relative;;
+}
+
+#journey-switcher {
+  display: none;
+}
+
+#journey-switcher:checked ~ #journey-short {
+  display: none;
+}
+
+#journey-switcher ~ #journey-long {
+  display: none;
+}
+#journey-switcher:checked ~ #journey-long {
+  display: block;
+}
+
+#journey label.journey-zoom {
+  position: absolute;
+}
+
+#journey label.journey-zoom img {
+  width: clamp(150px, 40vw, 500px);
+  margin-left: 35vw;
+  transform: translateY(-100px);
+}
+
+#journey ul {
+  --col-gap: 2rem;
+  --row-gap: 2rem;
+  --line-w: 0.25rem;
+  display: grid;
+  grid-template-columns: var(--line-w) 1fr;
+  grid-auto-columns: max-content;
+  column-gap: var(--col-gap);
+  list-style: none;
+  width: min(60rem, 90%);
+  margin-inline: auto;
+}
+
+/* line */
+#journey ul::before {
+  content: "";
+  grid-column: 1;
+  grid-row: 1 / span 20;
+  background: rgb(225, 225, 225);
+  border-radius: calc(var(--line-w) / 2);
+}
+
+/* columns*/
+
+/* row gaps */
+#journey ul li:not(:last-child) {
+  margin-bottom: var(--row-gap);
+}
+
+/* card */
+#journey ul li {
+  grid-column: 2;
+  --inlineP: 1.5rem;
+  margin-inline: var(--inlineP);
+  grid-row: span 2;
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+}
+
+#journey ul li:nth-child(1) {
+  --accent-color:#fb6d3e;
+}
+#journey ul li:nth-child(2) {
+  --accent-color:#fb933e;
+}
+#journey ul li:nth-child(3) {
+  --accent-color:#FBCA3E;
+}
+#journey ul li:nth-child(4) {
+  --accent-color:#83fb3e;
+}
+#journey ul li:nth-child(5) {
+  --accent-color:#3ef8fb;
+}
+#journey ul li:nth-child(6) {
+  --accent-color:#473efb;
+}
+#journey ul li:nth-child(7) {
+  --accent-color:#c23efb;
+}
+
+/* date */
+#journey ul li .journey-date {
+  --dateH: 3rem;
+  height: var(--dateH);
+  margin-inline: calc(var(--inlineP) * -1);
+
+  text-align: center;
+  background-color: var(--accent-color);
+
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+
+  display: grid;
+  place-content: center;
+  position: relative;
+
+  border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
+}
+
+/* date flap */
+#journey ul li .journey-date::before {
+  content: "";
+  width: var(--inlineP);
+  aspect-ratio: 1;
+  background: var(--accent-color);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
+  position: absolute;
+  top: 100%;
+
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  right: 0;
+}
+
+/* circle */
+#journey ul li .journey-date::after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  aspect-ratio: 1;
+  background: var(--background-primary);
+  border: 0.3rem solid var(--accent-color);
+  border-radius: 50%;
+  top: 50%;
+
+  transform: translate(50%, -50%);
+  right: calc(100% + var(--col-gap) + var(--line-w) / 2);
+}
+
+/* title descr */
+#journey ul li .journey-title,
+#journey ul li .journey-text {
+  position: relative;
+  padding-inline: 1.5rem;
+}
+
+#journey ul li .journey-title {
+  overflow: hidden;
+  padding-block-start: 1.5rem;
+  padding-block-end: 1rem;
+  font-weight: 500;
+}
+
+#journey ul li .journey-text {
+  padding-block-end: 1.5rem;
+  font-weight: 300;
+}
+
+@media (min-width: 40rem) {
+  #journey ul {
+    grid-template-columns: 1fr var(--line-w) 1fr;
+  }
+  #journey ul::before {
+    grid-column: 2;
+  }
+  #journey ul li:nth-child(odd) {
+    grid-column: 1;
+  }
+  #journey ul li:nth-child(even) {
+    grid-column: 3;
+  }
+
+  /* start second card */
+  #journey  ul li:nth-child(2) {
+    grid-row: 2/4;
+  }
+
+  #journey ul li:nth-child(odd) .journey-date::before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    left: 0;
+  }
+
+  #journey ul li:nth-child(odd) .journey-date::after {
+    transform: translate(-50%, -50%);
+    left: calc(100% + var(--col-gap) + var(--line-w) / 2);
+  }
+  #journey ul li:nth-child(odd) .journey-date {
+    border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
+  }
+}
