@@ -84,9 +84,9 @@ interface Translations {
 }
 
 const translations: Record<string, Promise<Translations>> = {
-  es: fetch('../src/i18n/es.json').then((res) => res.json()),
-  en: fetch('../src/i18n/en.json').then((res) => res.json()),
-  de: fetch('../src/i18n/de.json').then((res) => res.json())
+  es: fetch('../i18n/es.json').then((res) => res.json()),
+  en: fetch('../i18n/es.json').then((res) => res.json()),
+  de: fetch('../i18n/es.json').then((res) => res.json())
 };
 
 const getNestedValue = (obj: Translations, path: string): string | undefined => {
