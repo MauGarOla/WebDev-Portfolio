@@ -1,5 +1,16 @@
 {
+    "languages": {
+      "english": "Inlgés",
+      "german": "Alemán",
+      "spanish": "Español"
+    },
+    "theme": {
+      "light": "Claro",
+      "dark": "Oscuro",
+      "system": "Sistema"
+    },
     "hero": {
+      "section": "Inicio",
       "name": "<strong>Mauricio <br>G. Olagaray</strong>",
       "title": "Desarrollador web apasionado por crear experiencias digitales funcionales y atractivas.",
       "description": "Soy un <strong>desarrollador web</strong> con una mentalidad <strong>analítica</strong> y <strong>creativa</strong>, apasionado por construir aplicaciones que <strong>resuelvan problemas reales</strong> y mejoren la vida de las personas. Mi enfoque combina <strong>tecnología</strong>, <strong>diseño intuitivo</strong> y <strong>eficiencia en el código</strong>."
@@ -141,6 +152,12 @@
       {
         "name": "<strong>Tiny Piano</strong>",
         "description": "Un <strong>pequeño piano interactivo</strong> que permite reproducir sonidos al hacer clic en las teclas.",
+        "image": "<img> image </img>",
+        "stack": [
+          "Next.js", 
+          "Go", 
+          "Tailwind"
+        ],
         "status": "<strong>Terminado</strong>",
         "link": "<strong>Repositorio en GitHub</strong>",
         "demo": "No disponible",
@@ -153,6 +170,12 @@
       {
         "name": "<strong>Garage Sale</strong>",
         "description": "Una página web diseñada para visualizar los artículos restantes de una venta de garaje. Construida con Astro para un rendimiento optimizado.",
+        "image": "<img> image </img>",
+        "stack": [
+          "Next.js", 
+          "Go", 
+          "Tailwind"
+        ],
         "status": "<strong>Terminado</strong>",
         "link": "<strong>Repositorio en GitHub</strong>",
         "demo": "No disponible",
@@ -165,6 +188,12 @@
       {
         "name": "<strong>CSS Daily Challenge</strong>",
         "description": "Una colección de retos diarios de CSS, creados con HTML, CSS y JavaScript. Los retos fueron organizados en un sitio hecho con Astro.",
+        "image": "<img> image </img>",
+        "stack": [
+          "Next.js", 
+          "Go", 
+          "Tailwind"
+        ],
         "status": "<strong>Terminado</strong>",
         "link": "<strong>Repositorio en GitHub</strong>",
         "demo": "No disponible",
@@ -177,6 +206,12 @@
       {
         "name": "<strong>Go Daily Challengee</strong>",
         "description": "Retos enfocados en el lenguaje de programación Go para resolver problemas y construir pequeños proyectos.",
+        "image": "<img> image </img>",
+        "stack": [
+          "Next.js", 
+          "Go", 
+          "Tailwind"
+        ],
         "status": "<strong>Terminado</strong>",
         "link": "<strong>Repositorio en GitHub</strong>",
         "demo": "No disponible",
@@ -189,6 +224,12 @@
       {
         "name": "<strong>Proyecto de Finanzas Personales</strong>",
         "description": "Una aplicación para gestionar finanzas personales, desarrollada con Next.js y Tailwind CSS.",
+        "image": "<img> image </img>",
+        "stack": [
+          "Next.js", 
+          "Go", 
+          "Tailwind"
+        ],
         "status": "<strong>Terminado</strong>",
         "link": "<strong>Repositorio en GitHub</strong>",
         "demo": "No disponible",
@@ -201,6 +242,12 @@
       {
         "name": "<strong>Life Mapper</strong>",
         "description": "Una aplicación móvil para registrar eventos diarios, con categorías y hábitos personalizables. Desarrollada en Swift para iOS y con un backend en Go.",
+        "image": "<img> image </img>",
+        "stack": [
+          "Next.js", 
+          "Go", 
+          "Tailwind"
+        ],
         "status": "<strong>Terminado</strong>",
         "link": "<strong>Repositorio en GitHub</strong>",
         "demo": "No disponible",
@@ -213,6 +260,12 @@
       {
         "name": "<strong>Angular Daily Challenge</strong>",
         "description": "Serie de retos pequeños para aprender Angular, enfocados en el uso de componentes, servicios y manejo del estado.",
+        "image": "<img> image </img>",
+        "stack": [
+          "Next.js", 
+          "Go", 
+          "Tailwind"
+        ],
         "status": "<strong>Terminado</strong>",
         "link": "<strong>Repositorio en GitHub</strong>",
         "demo": "No disponible",
@@ -225,6 +278,7 @@
     ]
     },
     "contact": {
+      "section": "Contacto",
       "email": "<strong>mauricio@example.com</strong>",
       "linkedin": "<strong>https://www.linkedin.com/in/mauricioolagaray/</strong>",
       "github": "<strong>https://github.com/mauricioolagaray</strong>",

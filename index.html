@@ -5,27 +5,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mau G. Olagaray Portfolio</title>
   <link rel="stylesheet" href="./src/styles/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=brightness_2,construction,contact_mail,dark_mode,format_paint,home,home_storage,light_mode,menu,person,routine,sunny,tactic,translate" />
 </head>
 <body>
 
   <figure class="gradient"></figure>
 
   <main>
+    <!-- navbar -->
     <nav>
-      <section class="nav-lang-switch">
-        <button class="lang-switch" data-lang="en">EN</button>
-        <button class="lang-switch" data-lang="de">DE</button>
-        <button class="lang-switch" data-lang="es">ES</button>
-      </section>
-      
-      <section class="color-picker">
-        <input type="color" id="colorInput" />
+      <section class="nav-menu icon-container">
+        <span class="material-symbols-outlined nav-icon">menu</span>
+        <ul class="nav-menu-list dropdown">
+          <li><a href="#hero">
+            <span class="material-symbols-outlined list-icon">home</span>
+            <span class="tooltip" data-key="hero.section"></span>
+          </a></li>
+          <li><a href="#about">
+            <span class="material-symbols-outlined list-icon">person</span>
+            <span class="tooltip" data-key="about.section"></span>
+          </a></li>
+          <li><a href="#skills">
+            <span class="material-symbols-outlined list-icon">construction</span>
+            <span class="tooltip" data-key="skills.section"></span>
+          </a></li>
+          <li><a href="#journey">
+            <span class="material-symbols-outlined list-icon">tactic</span>
+            <span class="tooltip" data-key="journey.section"></span>
+          </a></li>
+          <li><a href="#projects">
+            <span class="material-symbols-outlined list-icon">home_storage</span>
+            <span class="tooltip" data-key="projects.section"></span>
+          </a></li>
+          <li><a href="#contact">
+            <span class="material-symbols-outlined list-icon">contact_mail</span>
+            <span class="tooltip" data-key="contact.section"></span>
+          </a></li>
+        </ul>
       </section>
 
-      <section class="nav-theme-switch">
-        <button id="light-button">☀︎</button>
-        <button id="dark-button">☽</button>
-        <button id="system-button">⚇</button>
+      <section class="nav-lang-switch icon-container">
+        <span class="material-symbols-outlined nav-icon">translate</span>
+        <ul class="nav-lang-list dropdown">
+          <li>
+            <button class="lang-switch list-icon" data-lang="en">EN</button>
+            <span class="tooltip" data-key="languages.english"></span>
+          </li>
+          <li>
+            <button class="lang-switch list-icon" data-lang="de">DE</button>
+            <span class="tooltip" data-key="languages.german"></span>
+          </li>
+          <li>
+            <button class="lang-switch list-icon" data-lang="es">ES</button>
+            <span class="tooltip" data-key="languages.spanish"></span>
+          </li>
+        </ul>
+      </section>
+      
+      <section class="nav-color-picker icon-container">
+        <span class="material-symbols-outlined nav-icon">format_paint</span>
+        <section class="color-picker-container dropdown">
+          <canvas id="color-picker"></canvas>
+          <div id="color-indicator"></div> 
+        </section>
+      </section>
+
+      <section class="nav-theme-switch icon-container">
+        <span class="material-symbols-outlined nav-icon">routine</span>
+        <ul class="nav-theme-list dropdown">
+          <li>
+            <button id="light-button" class="list-icon">
+              <span class="material-symbols-outlined">light_mode</span>
+            </button>
+            <span class="tooltip" data-key="theme.light"></span>
+          </li>
+          <li>
+            <button id="dark-button" class="list-icon">
+              <span class="material-symbols-outlined">dark_mode</span>
+            </button>
+            <span class="tooltip" data-key="theme.dark"></span>
+          </li>
+          <li>
+            <button id="system-button" class="list-icon">
+              <span class="material-symbols-outlined">routine</span>
+            </button>
+            <span class="tooltip" data-key="theme.system"></span>
+          </li>
+        </ul>
       </section>
     </nav>
   

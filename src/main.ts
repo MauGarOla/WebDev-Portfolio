@@ -1,4 +1,52 @@
-//Light-Dark start
+// Navbar
+
+const iconContainers = document.querySelectorAll(".icon-container");
+let closeTimeout: number | null = null;
+
+const closeDropdowns = () => {
+    document.querySelectorAll(".dropdown").forEach(dropdown => {
+        dropdown.classList.remove("open");
+    });
+};
+
+iconContainers.forEach(icon => {
+    icon.addEventListener("click", (event) => {
+        event.stopPropagation();
+
+        const dropdown = icon.querySelector(".dropdown") as HTMLElement;
+        if (!dropdown) return;
+
+        const isOpen = dropdown.classList.contains("open");
+        closeDropdowns();
+
+        if (!isOpen) {
+            dropdown.classList.add("open");
+        }
+    });
+
+    const dropdown = icon.querySelector(".dropdown") as HTMLElement;
+    if (!dropdown) return;
+
+    dropdown.addEventListener("mouseenter", () => {
+        if (closeTimeout) {
+            clearTimeout(closeTimeout);
+            closeTimeout = null;
+        }
+    });
+
+    dropdown.addEventListener("mouseleave", () => {
+        closeTimeout = setTimeout(() => {
+            dropdown.classList.remove("open");
+        }, 300);
+    });
+});
+
+document.addEventListener("scroll", closeDropdowns);
+document.addEventListener("click", closeDropdowns);
+
+
+
+// //Light-Dark start
 
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
@@ -53,26 +101,51 @@ if (savedTheme) {
 
 //Color-Selector start
 
-const colorInput = document.getElementById("colorInput") as HTMLInputElement;
+document.addEventListener("DOMContentLoaded", () => {
+  const canvas = document.getElementById("color-picker") as HTMLCanvasElement;
+  const ctx = canvas.getContext("2d")!;
+  const indicator = document.getElementById("color-indicator") as HTMLDivElement;
+  let isDragging = false;
 
-let currentColor = "#6FCF97";
+  const setIndicatorPosition = (y: number) => {
+    y = Math.max(0, Math.min(y, canvas.height - 1));
+    indicator.style.top = `${y}px`;
 
-const updateStrongColors = () => {
-  const strongElements = document.querySelectorAll("strong");
-  strongElements.forEach((el) => {
-    (el as HTMLElement).style.color = currentColor;
+    const pixel = ctx.getImageData(0, y, 1, 1).data;
+    const color = `rgb(${pixel[0]}, ${pixel[1]}, ${pixel[2]})`;
+
+    document.body.style.setProperty("--action", color);
+  };
+
+  const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+  gradient.addColorStop(0, "#ff0000");
+  gradient.addColorStop(0.17, "#ffff00");
+  gradient.addColorStop(0.34, "#00ff00");
+  gradient.addColorStop(0.51, "#00ffff");
+  gradient.addColorStop(0.68, "#0000ff");
+  gradient.addColorStop(0.85, "#ff00ff");
+  gradient.addColorStop(1, "#ff0000");
+
+  ctx.fillStyle = gradient;
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  const initialY = Math.floor(canvas.height * 0.5);
+  setIndicatorPosition(initialY);
+
+  canvas.addEventListener("mousedown", (event) => {
+    isDragging = true;
+    setIndicatorPosition(event.offsetY);
   });
-};
 
-const updateColor = (color: string) => {
-  currentColor = color;
-  updateStrongColors();
-};
+  canvas.addEventListener("mousemove", (event) => {
+    if (isDragging) {
+      setIndicatorPosition(event.offsetY);
+    }
+  });
 
-colorInput.addEventListener("input", (e) => {
-  const target = e.target as HTMLInputElement;
-  const selectedColor = target.value;
-  updateColor(selectedColor);
+  document.addEventListener("mouseup", () => {
+    isDragging = false;
+  });
 });
 
 //Color-Selector finish
@@ -108,8 +181,6 @@ const applyTranslations = (langData: Translations): void => {
       }
     }
   });
-
-  updateStrongColors();
 };
 
 const setLanguage = async (lang: string): Promise<void> => {
@@ -131,8 +202,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   const savedLang = localStorage.getItem('lang') || 'en';
   const langData = await translations[savedLang];
   applyTranslations(langData);
-
-  updateStrongColors();
 });
 
 //Translations finish
