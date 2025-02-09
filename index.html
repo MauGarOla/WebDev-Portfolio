@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mau G. Olagaray Portfolio</title>
   <link rel="stylesheet" href="./src/styles/style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=brightness_2,construction,contact_mail,dark_mode,format_paint,home,home_storage,light_mode,menu,person,routine,sunny,tactic,translate" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_left,arrow_right,brightness_2,construction,contact_mail,dark_mode,format_paint,home,home_storage,light_mode,menu,person,routine,sunny,tactic,translate" />
 </head>
 <body>
 
+  <!-- background -->
   <figure class="gradient"></figure>
 
   <main>
@@ -119,7 +120,7 @@
     </section>
 
     <!-- Skills -->
-     <section id="skills">
+    <section id="skills">
        <h2 data-key="skills.section"></h2>
        <section class="block-grid">
          <section class="block-row">
@@ -192,10 +193,7 @@
            <h3 class="block-text">Debugging</h3>
           </section>
         </section>
-       </section>
-     </section>
-
-      <!-- Añadir más bloques según sea necesario -->
+      </section>
     </section>
 
     <!-- Journey Section -->
@@ -337,93 +335,263 @@
 
     <!-- Projects Section -->
     <section id="projects">
-        <h2 data-key="projects.section"></h2>
-        <div>
-            <article>
-                <h3 data-key="projects.entries.0.name"></h3>
-                <p data-key="projects.entries.0.description"></p>
-                <p data-key="projects.entries.0.status"></p>
-                <a data-key="projects.entries.0.link" href="#"></a>
-                <a data-key="projects.entries.0.demo" href="#"></a>
-                <ul>
-                  <li data-key="projects.entries.0.learnings.0"></li>
-                  <li data-key="projects.entries.0.learnings.1"></li>
-                  <li data-key="projects.entries.0.learnings.2"></li>
-                </ul>
-            </article>
-            <article>
-                <h3 data-key="projects.entries.1.name"></h3>
-                <p data-key="projects.entries.1.description"></p>
-                <p data-key="projects.entries.1.status"></p>
-                <a data-key="projects.entries.1.link" href="#"></a>
-                <a data-key="projects.entries.1.demo" href="#"></a>
-                <ul>
-                  <li data-key="projects.entries.1.learnings.0"></li>
-                  <li data-key="projects.entries.1.learnings.1"></li>
-                  <li data-key="projects.entries.1.learnings.2"></li>
-                </ul>
-            </article>
-            <article>
-                <h3 data-key="projects.entries.2.name"></h3>
-                <p data-key="projects.entries.2.description"></p>
-                <p data-key="projects.entries.2.status"></p>
-                <a data-key="projects.entries.2.link" href="#"></a>
-                <a data-key="projects.entries.2.demo" href="#"></a>
-                <ul>
-                  <li data-key="projects.entries.2.learnings.0"></li>
-                  <li data-key="projects.entries.2.learnings.1"></li>
-                  <li data-key="projects.entries.2.learnings.2"></li>
-                </ul>
-            </article>
-            <article>
-                <h3 data-key="projects.entries.3.name"></h3>
-                <p data-key="projects.entries.3.description"></p>
-                <p data-key="projects.entries.3.status"></p>
-                <a data-key="projects.entries.3.link" href="#"></a>
-                <a data-key="projects.entries.3.demo" href="#"></a>
-                <ul>
-                  <li data-key="projects.entries.3.learnings.0"></li>
-                  <li data-key="projects.entries.3.learnings.1"></li>
-                  <li data-key="projects.entries.3.learnings.2"></li>
-                </ul>
-            </article>
-            <article>
-                <h3 data-key="projects.entries.4.name"></h3>
-                <p data-key="projects.entries.4.description"></p>
-                <p data-key="projects.entries.4.status"></p>
-                <a data-key="projects.entries.4.link" href="#"></a>
-                <a data-key="projects.entries.4.demo" href="#"></a>
-                <ul>
-                  <li data-key="projects.entries.4.learnings.0"></li>
-                  <li data-key="projects.entries.4.learnings.1"></li>
-                  <li data-key="projects.entries.4.learnings.2"></li>
-                </ul>
-            </article>
-            <article>
-                <h3 data-key="projects.entries.5.name"></h3>
-                <p data-key="projects.entries.5.description"></p>
-                <p data-key="projects.entries.5.status"></p>
-                <a data-key="projects.entries.5.link" href="#"></a>
-                <a data-key="projects.entries.5.demo" href="#"></a>
-                <ul>
-                  <li data-key="projects.entries.5.learnings.0"></li>
-                  <li data-key="projects.entries.5.learnings.1"></li>
-                  <li data-key="projects.entries.5.learnings.2"></li>
-                </ul>
-            </article>
-            <article>
-                <h3 data-key="projects.entries.6.name"></h3>
-                <p data-key="projects.entries.6.description"></p>
-                <p data-key="projects.entries.6.status"></p>
-                <a data-key="projects.entries.6.link" href="#"></a>
-                <a data-key="projects.entries.6.demo" href="#"></a>
-                <ul>
-                  <li data-key="projects.entries.6.learnings.0"></li>
-                  <li data-key="projects.entries.6.learnings.1"></li>
-                  <li data-key="projects.entries.6.learnings.2"></li>
-                </ul>
-            </article>
-        </div>
+      <h2 data-key="projects.section"></h2>
+
+      <button id="prev-btn">
+        <span class="material-symbols-outlined list-icon">arrow_left</span>
+      </button>
+      <button id="next-btn">
+        <span class="material-symbols-outlined list-icon">arrow_right</span>
+      </button>
+
+      <section class="project-container">
+        <article class="project project-visibility">
+          <img class="project-image" src="./src/assets/images/tiny-piano.png" alt="Project image" data-key="projects.entries.0.image">
+          <aside class="image-text">
+            <header class="project-header">
+              <h3 data-key="projects.entries.0.name"></h3>
+              <ul class="stack">
+                <li data-key="projects.entries.0.stack.0"></li>
+                <li data-key="projects.entries.0.stack.1"></li>
+                <li data-key="projects.entries.0.stack.2"></li>
+              </ul>
+            </header>
+            <footer class="project-footer">
+            <p class="project-description" data-key="projects.entries.0.description"></p>
+            <ul class="project-learnings">
+              <li data-key="projects.entries.0.learnings.0"></li>
+              <li data-key="projects.entries.0.learnings.1"></li>
+              <li data-key="projects.entries.0.learnings.2"></li>
+            </ul>
+              <section class="tags">
+                <span class="status" data-key="projects.entries.0.status"></span>
+                <section class="links">
+                  <a  href="#projects" class="code-btn">Code</a>
+                  <span class="tooltip" data-key="projects.entries.0.link"></span>
+                  <a  href="#projects" class="demo-btn">Demo</a>
+                  <span class="tooltip" data-key="projects.entries.0.demo"></span>
+                </setion>
+              </section>
+            </footer>
+          </aside>
+        </article>
+        
+        <article class="project">
+          <img class="project-image" src="./src/assets/images/quote-image.webp" alt="Project image" data-key="projects.entries.1.image">
+          <aside class="image-text">
+            <header class="project-header">
+              <h3 data-key="projects.entries.1.name"></h3>
+              <ul class="stack">
+                <li data-key="projects.entries.1.stack.0"></li>
+                <li data-key="projects.entries.1.stack.1"></li>
+                <li data-key="projects.entries.1.stack.2"></li>
+              </ul>
+            </header>
+            <footer class="project-footer">
+            <p class="project-description" data-key="projects.entries.1.description"></p>
+            <ul class="project-learnings">
+              <li data-key="projects.entries.1.learnings.0"></li>
+              <li data-key="projects.entries.1.learnings.1"></li>
+              <li data-key="projects.entries.1.learnings.2"></li>
+            </ul>
+              <section class="tags">
+                <span class="status" data-key="projects.entries.1.status"></span>
+                <section class="links">
+                  <a  href="#projects" class="code-btn">Code</a>
+                  <span class="tooltip" data-key="projects.entries.1.link"></span>
+                  <a  href="#projects" class="demo-btn">Demo</a>
+                  <span class="tooltip" data-key="projects.entries.1.demo"></span>
+                </setion>
+              </section>
+            </footer>
+          </aside>
+        </article>
+        
+        <article class="project">
+          <img class="project-image" src="./src/assets/images/garage-sale.webp" alt="Project image" data-key="projects.entries.2.image">
+          <aside class="image-text">
+            <header class="project-header">
+              <h3 data-key="projects.entries.2.name"></h3>
+              <ul class="stack">
+                <li data-key="projects.entries.2.stack.0"></li>
+                <li data-key="projects.entries.2.stack.1"></li>
+                <li data-key="projects.entries.2.stack.2"></li>
+              </ul>
+            </header>
+            <footer class="project-footer">
+            <p class="project-description" data-key="projects.entries.2.description"></p>
+            <ul class="project-learnings">
+              <li data-key="projects.entries.2.learnings.0"></li>
+              <li data-key="projects.entries.2.learnings.1"></li>
+              <li data-key="projects.entries.2.learnings.2"></li>
+            </ul>
+              <section class="tags">
+                <span class="status" data-key="projects.entries.2.status"></span>
+                <section class="links">
+                  <a  href="#projects" class="code-btn">Code</a>
+                  <span class="tooltip" data-key="projects.entries.2.link"></span>
+                  <a  href="#projects" class="demo-btn">Demo</a>
+                  <span class="tooltip" data-key="projects.entries.2.demo"></span>
+                </setion>
+              </section>
+            </footer>
+          </aside>
+        </article>
+        
+        <article class="project">
+          <img class="project-image" src="./src/assets/images/css-daily-challenge.webp" alt="Project image" data-key="projects.entries.3.image">
+          <aside class="image-text">
+            <header class="project-header">
+              <h3 data-key="projects.entries.3.name"></h3>
+              <ul class="stack">
+                <li data-key="projects.entries.3.stack.0"></li>
+                <li data-key="projects.entries.3.stack.1"></li>
+                <li data-key="projects.entries.3.stack.2"></li>
+              </ul>
+            </header>
+            <footer class="project-footer">
+            <p class="project-description" data-key="projects.entries.3.description"></p>
+            <ul class="project-learnings">
+              <li data-key="projects.entries.3.learnings.0"></li>
+              <li data-key="projects.entries.3.learnings.1"></li>
+              <li data-key="projects.entries.3.learnings.2"></li>
+            </ul>
+              <section class="tags">
+                <span class="status" data-key="projects.entries.3.status"></span>
+                <section class="links">
+                  <a  href="#projects" class="code-btn">Code</a>
+                  <span class="tooltip" data-key="projects.entries.3.link"></span>
+                  <a  href="#projects" class="demo-btn">Demo</a>
+                  <span class="tooltip" data-key="projects.entries.3.demo"></span>
+                </setion>
+              </section>
+            </footer>
+          </aside>
+        </article>
+        
+        <article class="project">
+          <img class="project-image" src="./src/assets/images/tiny-piano.png" alt="Project image" data-key="projects.entries.4.image">
+          <aside class="image-text">
+            <header class="project-header">
+              <h3 data-key="projects.entries.4.name"></h3>
+              <ul class="stack">
+                <li data-key="projects.entries.4.stack.0"></li>
+                <li data-key="projects.entries.4.stack.1"></li>
+                <li data-key="projects.entries.4.stack.2"></li>
+              </ul>
+            </header>
+            <footer class="project-footer">
+            <p class="project-description" data-key="projects.entries.4.description"></p>
+            <ul class="project-learnings">
+              <li data-key="projects.entries.4.learnings.0"></li>
+              <li data-key="projects.entries.4.learnings.1"></li>
+              <li data-key="projects.entries.4.learnings.2"></li>
+            </ul>
+              <section class="tags">
+                <span class="status" data-key="projects.entries.4.status"></span>
+                <section class="links">
+                  <a  href="#projects" class="code-btn">Code</a>
+                  <span class="tooltip" data-key="projects.entries.4.link"></span>
+                  <a  href="#projects" class="demo-btn">Demo</a>
+                  <span class="tooltip" data-key="projects.entries.4.demo"></span>
+                </setion>
+              </section>
+            </footer>
+          </aside>
+        </article>
+        
+        <article class="project">
+          <img class="project-image" src="./src/assets/images/tiny-piano.png" alt="Project image" data-key="projects.entries.5.image">
+          <aside class="image-text">
+            <header class="project-header">
+              <h3 data-key="projects.entries.5.name"></h3>
+              <ul class="stack">
+                <li data-key="projects.entries.5.stack.0"></li>
+                <li data-key="projects.entries.5.stack.1"></li>
+                <li data-key="projects.entries.5.stack.2"></li>
+              </ul>
+            </header>
+            <footer class="project-footer">
+            <p class="project-description" data-key="projects.entries.5.description"></p>
+            <ul class="project-learnings">
+              <li data-key="projects.entries.5.learnings.0"></li>
+              <li data-key="projects.entries.5.learnings.1"></li>
+              <li data-key="projects.entries.5.learnings.2"></li>
+            </ul>
+              <section class="tags">
+                <span class="status" data-key="projects.entries.5.status"></span>
+                <section class="links">
+                  <a  href="#projects" class="code-btn">Code</a>
+                  <span class="tooltip" data-key="projects.entries.5.link"></span>
+                  <a  href="#projects" class="demo-btn">Demo</a>
+                  <span class="tooltip" data-key="projects.entries.5.demo"></span>
+                </setion>
+              </section>
+            </footer>
+          </aside>
+        </article>
+
+        <article class="project">
+          <img class="project-image" src="./src/assets/images/tiny-piano.png" alt="Project image" data-key="projects.entries.6.image">
+          <aside class="image-text">
+            <header class="project-header">
+              <h3 data-key="projects.entries.6.name"></h3>
+              <ul class="stack">
+                <li data-key="projects.entries.6.stack.0"></li>
+                <li data-key="projects.entries.6.stack.1"></li>
+                <li data-key="projects.entries.6.stack.2"></li>
+              </ul>
+            </header>
+            <footer class="project-footer">
+            <p class="project-description" data-key="projects.entries.6.description"></p>
+            <ul class="project-learnings">
+              <li data-key="projects.entries.6.learnings.0"></li>
+              <li data-key="projects.entries.6.learnings.1"></li>
+              <li data-key="projects.entries.6.learnings.2"></li>
+            </ul>
+              <section class="tags">
+                <span class="status" data-key="projects.entries.6.status"></span>
+                <section class="links">
+                  <a  href="#projects" class="code-btn">Code</a>
+                  <span class="tooltip" data-key="projects.entries.6.link"></span>
+                  <a  href="#projects" class="demo-btn">Demo</a>
+                  <span class="tooltip" data-key="projects.entries.6.demo"></span>
+                </setion>
+              </section>
+            </footer>
+          </aside>
+        </article>
+
+        <article class="project">
+          <img class="project-image" src="./src/assets/images/tiny-piano.png" alt="Project image" data-key="projects.entries.7.image">
+          <aside class="image-text">
+            <header class="project-header">
+              <h3 data-key="projects.entries.7.name"></h3>
+              <ul class="stack">
+                <li data-key="projects.entries.7.stack.0"></li>
+                <li data-key="projects.entries.7.stack.1"></li>
+                <li data-key="projects.entries.7.stack.2"></li>
+              </ul>
+            </header>
+            <footer class="project-footer">
+            <p class="project-description" data-key="projects.entries.7.description"></p>
+            <ul class="project-learnings">
+              <li data-key="projects.entries.7.learnings.0"></li>
+              <li data-key="projects.entries.7.learnings.1"></li>
+              <li data-key="projects.entries.7.learnings.2"></li>
+            </ul>
+              <section class="tags">
+                <span class="status" data-key="projects.entries.7.status"></span>
+                <section class="links">
+                  <a  href="#projects" class="code-btn">Code</a>
+                  <span class="tooltip" data-key="projects.entries.7.link"></span>
+                  <a  href="#projects" class="demo-btn">Demo</a>
+                  <span class="tooltip" data-key="projects.entries.7.demo"></span>
+                </setion>
+              </section>
+            </footer>
+          </aside>
+        </article>
     </section>
 
     <!-- Contact Section -->

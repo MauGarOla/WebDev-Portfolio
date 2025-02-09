@@ -152,13 +152,31 @@
       {
         "name": "<strong>Tiny Piano</strong>",
         "description": "Un <strong>pequeño piano interactivo</strong> que permite reproducir sonidos al hacer clic en las teclas.",
-        "image": "<img> image </img>",
+        "image": "./src/assets/images/testImg.png",
         "stack": [
           "Next.js", 
           "Go", 
           "Tailwind"
         ],
-        "status": "<strong>Terminado</strong>",
+        "status": "Terminado",
+        "link": "<strong>Repositorio en GitHub</strong>",
+        "demo": "No disponible",
+        "learnings": [
+            "* Creación de elementos interactivos con eventos de JavaScript.",
+            "* Uso de CSS para personalizar un diseño visualmente atractivo.",
+            "* Manipulación del DOM para integrar interactividad."
+        ]
+      },
+      {
+        "name": "<strong>Quote Image</strong>",
+        "description": "Un <strong>pequeño piano interactivo</strong> que permite reproducir sonidos al hacer clic en las teclas.",
+        "image": "./src/assets/images/testImg.png",
+        "stack": [
+          "Next.js", 
+          "Go", 
+          "Tailwind"
+        ],
+        "status": "Terminado",
         "link": "<strong>Repositorio en GitHub</strong>",
         "demo": "No disponible",
         "learnings": [
@@ -279,9 +297,10 @@
     },
     "contact": {
       "section": "Contacto",
-      "email": "<strong>mauricio@example.com</strong>",
-      "linkedin": "<strong>https://www.linkedin.com/in/mauricioolagaray/</strong>",
-      "github": "<strong>https://github.com/mauricioolagaray</strong>",
-      "portfolio": "<strong>https://mauricioolagaray.com</strong>"
+      "email": "<strong>ma.ga.ol@hotmail.com</strong>",
+      "linkedin": "<strong>https://de.linkedin.com/in/mauriciogolagaray/en</strong>",
+      "github": "<strong>https://github.com/MauGarOla</strong>",
+      "portfolio": "<strong>https://mauolagarayportfolio.netlify.app</strong>",
+      "resume": "<strong>Curriculum</strong>"
     }
   }

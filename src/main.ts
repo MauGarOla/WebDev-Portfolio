@@ -205,3 +205,32 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 //Translations finish
+
+
+// projects 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const projects = document.querySelectorAll<HTMLElement>(".project");
+  const nextBtn = document.getElementById("next-btn")!;
+  const prevBtn = document.getElementById("prev-btn")!;
+
+  let currentIndex = 0;
+
+  function updateVisibility(index: number) {
+    projects.forEach((project, i) => {
+      project.classList.toggle("project-visibility", i === index);
+    });
+  }
+
+  nextBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % projects.length;
+    updateVisibility(currentIndex);
+  });
+
+  prevBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + projects.length) % projects.length;
+    updateVisibility(currentIndex);
+  });
+
+  updateVisibility(currentIndex); 
+});
