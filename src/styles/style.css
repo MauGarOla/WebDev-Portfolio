@@ -76,7 +76,9 @@ body, body.dark {
 
 strong {
   font-weight: bold;
-  color: var(--action);
+  text-decoration: underline;
+  text-decoration-color: var(--action);
+  text-decoration-thickness: 3px;
 }
 
 /* Content */
@@ -746,7 +748,7 @@ article {
 
 /* contact me */
 
-.portfolio-footer {
+#footer {
   padding: 20px 0;
   text-align: center;
   font-size: 14px;

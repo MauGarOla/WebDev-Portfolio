@@ -92,8 +92,8 @@
               "Un nuevo comienzo técnico"
           ],
           "description": [
-              "Durante este periodo, me sumergí por completo en el desarrollo web, dominando tecnologías como Next.js, Angular, TypeScript y Go. Como parte de mi crecimiento, creé una aplicación de finanzas personales, combinando mis conocimientos financieros con mis habilidades técnicas.", 
-              "Además, tuve la oportunidad adquirir experiencia práctica en la industria tecnológica: Freelance en On-running: Desarrollo de soluciones digitales innovadoras. Practicante en BMW Group: Implementación de herramientas tecnológicas para optimizar procesos empresariales."
+              "Durante este periodo, me sumergí por completo en el desarrollo web, dominando tecnologías como <strong>Next.js, Angular, TypeScript y Go</strong>. Como parte de mi crecimiento, creé una aplicación de finanzas personales, combinando mis conocimientos financieros con mis habilidades técnicas.", 
+              "Además, tuve la oportunidad adquirir experiencia práctica en la industria tecnológica: Freelance en <strong>On-running</strong>: Desarrollo de soluciones digitales innovadoras. Practicante en <strong>BMW Group</strong>: Implementación de herramientas tecnológicas para optimizar procesos empresariales."
           ]
           },
           {
@@ -103,38 +103,38 @@
               "El momento de cambio"
           ],
           "description": [
-              "Mientras trabajaba como Accounting Assistant en Angel Venture, descubrí cómo la programación podía automatizar procesos y simplificar tareas repetitivas. Este hallazgo despertó mi curiosidad y me llevó a explorar el mundo del desarrollo.",
-              "Más tarde, en mi rol como Desarrollador en Disfruta, creé sistemas web para optimizar la gestión de catálogos de productos, pedidos y logística. Esta experiencia me permitió conectar mi formación en finanzas con el potencial de la tecnología."
+              "Mientras trabajaba como Accounting Assistant en <strong>Angel Venture</strong>, descubrí cómo la programación podía automatizar procesos y simplificar tareas repetitivas. Este hallazgo despertó mi curiosidad y me llevó a explorar el mundo del desarrollo.",
+              "Más tarde, en mi rol como Desarrollador en <strong>Disfruta</strong>, creé sistemas web para optimizar la gestión de catálogos de productos, pedidos y logística. Esta experiencia me permitió conectar mi formación en finanzas con el potencial de la tecnología."
           ]
           },
           {
           "year": "2018 - 2023",
           "title": [
-              "<strong>Mi camino en Finanzas y Negocios 💼</strong>",
+              "Mi camino en Finanzas y Negocios 💼",
               "Experiencia en diversas áreas"
           ],
           "description": [
-              "Mi trayectoria en el mundo financiero me brindó habilidades clave en análisis, gestión y comunicación: General Assistant en Gabrica: Supervisión de transacciones financieras y análisis de presupuestos. Real Estate Advisor en Keller Williams: Desarrollo de estrategias personalizadas para clientes y creación de materiales visuales innovadores. Fundador de Ziel: Gestión de un fondo de inversión, análisis de riesgos y comunicación efectiva con clientes en un entorno dinámico."
+              "Mi trayectoria en el mundo financiero me brindó habilidades clave en análisis, gestión y comunicación: General Assistant en <strong>Gabrica</strong>: Supervisión de transacciones financieras y análisis de presupuestos. Real Estate Advisor en <strong>Keller Williams</strong>: Desarrollo de estrategias personalizadas para clientes y creación de materiales visuales innovadores. Fundador de Ziel: Gestión de un fondo de inversión, análisis de riesgos y comunicación efectiva con clientes en un entorno dinámico."
           ]
           },
           {
           "year": "2019 - 2022",
           "title": [
-              "<strong>Título en Finanzas y Contaduría Pública 🎓</strong>",
+              "Título en Finanzas y Contaduría Pública 🎓",
               "Explorando el mundo financiero"
           ],
           "description": [
-              "Mientras estudiaba en la Universidad Anáhuac, desarrollé un fuerte interés por los datos y la estructura financiera. Estos años me brindaron no solo conocimientos técnicos, sino también habilidades analíticas para resolver problemas empresariales complejos."
+              "Mientras estudiaba en la <strong>Universidad Anáhuac</strong>, desarrollé un fuerte interés por los datos y la estructura financiera. Estos años me brindaron no solo conocimientos técnicos, sino también habilidades analíticas para resolver problemas empresariales complejos."
           ]
           },
           {
           "year": "2018",
           "title": [
-              "<strong>Graduación del Colegio Alemán 🇩🇪</strong>",
+              "Graduación del Colegio Alemán 🇩🇪",
               "Un comienzo internacional"
           ],
           "description": [
-              "Mi formación en el Colegio Alemán me dio una mentalidad global y una base sólida en disciplina y organización, elementos clave que han guiado mi camino académico y profesional.", "Este viaje apenas comienza. Con cada desafío, me acerco más a mi meta: combinar creatividad, tecnología y estrategia para generar impacto en el mundo. 🚀✨"
+              "Mi formación en el <strong>Colegio Alemán</strong> me dio una mentalidad global y una base sólida en disciplina y organización, elementos clave que han guiado mi camino académico y profesional.", "Este viaje apenas comienza. Con cada desafío, me acerco más a mi meta: combinar creatividad, tecnología y estrategia para generar impacto en el mundo. 🚀✨"
           ]
           }
           
@@ -149,53 +149,53 @@
         "description": "Un <strong>pequeño piano interactivo</strong> que permite reproducir sonidos al hacer clic en las teclas.",
         "image": "./src/assets/images/testImg.png",
         "stack": [
-          "Next.js", 
-          "Go", 
-          "Tailwind"
+          "HTML", 
+          "CSS", 
+          "Javascript"
         ],
         "status": "Terminado",
-        "link": "<strong>Repositorio en GitHub</strong>",
+        "link": "Repositorio en GitHub",
         "demo": "No disponible",
         "learnings": [
-            "* Creación de elementos interactivos con eventos de JavaScript.",
-            "* Uso de CSS para personalizar un diseño visualmente atractivo.",
-            "* Manipulación del DOM para integrar interactividad."
+            "🎹 Creación de elementos interactivos con eventos de JavaScript.",
+            "🎹 Uso de CSS para personalizar un diseño visualmente atractivo.",
+            "🎹 Manipulación del DOM para integrar interactividad."
         ]
       },
       {
         "name": "<strong>Quote Image</strong>",
-        "description": "Un <strong>pequeño piano interactivo</strong> que permite reproducir sonidos al hacer clic en las teclas.",
+        "description": "Una página web que genera <strong>imágenes motivadoras</strong> con frases aleatorias. Implementada con React para la interfaz dinámica.",
         "image": "./src/assets/images/testImg.png",
         "stack": [
-          "Next.js", 
-          "Go", 
-          "Tailwind"
+          "React", 
+          "APIs", 
+          "CSS"
         ],
         "status": "Terminado",
-        "link": "<strong>Repositorio en GitHub</strong>",
+        "link": "Repositorio en GitHub",
         "demo": "No disponible",
         "learnings": [
-            "* Creación de elementos interactivos con eventos de JavaScript.",
-            "* Uso de CSS para personalizar un diseño visualmente atractivo.",
-            "* Manipulación del DOM para integrar interactividad."
+            "📜 Uso de React para la creación de componentes reutilizables.",
+            "📜 Generación de contenido dinámico a partir de arrays de datos.",
+            "📜 Creación de descargas automáticas de imágenes generadas en el navegador."
         ]
       },
       {
         "name": "<strong>Garage Sale</strong>",
-        "description": "Una página web diseñada para visualizar los artículos restantes de una venta de garaje. Construida con Astro para un rendimiento optimizado.",
+        "description": "Una página web diseñada para visualizar los artículos restantes de una <strong>venta de garaje</strong>. Construida con Astro para un rendimiento optimizado.",
         "image": "<img> image </img>",
         "stack": [
-          "Next.js", 
-          "Go", 
-          "Tailwind"
+          "Astro", 
+          "Typescript", 
+          "CSS"
         ],
-        "status": "<strong>Terminado</strong>",
-        "link": "<strong>Repositorio en GitHub</strong>",
+        "status": "Terminado",
+        "link": "Repositorio en GitHub",
         "demo": "No disponible",
         "learnings": [
-            "* Uso de Astro para construir páginas rápidas y ligeras.",
-            "* Optimización de interfaces para listas dinámicas.",
-            "* Diseño adaptativo para experiencias en dispositivos móviles."
+            "💸 Uso de Astro para construir páginas rápidas y ligeras.",
+            "💸 Optimización de interfaces para listas dinámicas.",
+            "💸 Diseño adaptativo para experiencias en dispositivos móviles."
         ]
       },
       {
@@ -203,17 +203,17 @@
         "description": "Una colección de retos diarios de CSS, creados con HTML, CSS y JavaScript. Los retos fueron organizados en un sitio hecho con Astro.",
         "image": "<img> image </img>",
         "stack": [
-          "Next.js", 
-          "Go", 
-          "Tailwind"
+          "HTML", 
+          "CSS", 
+          "Astro"
         ],
-        "status": "<strong>Terminado</strong>",
-        "link": "<strong>Repositorio en GitHub</strong>",
+        "status": "Terminado",
+        "link": "Repositorio en GitHub",
         "demo": "No disponible",
         "learnings": [
-            "* Mejora de habilidades en diseño con CSS, incluyendo animaciones y layouts complejos.",
-            "* Resolución de problemas pequeños en un entorno web.",
-            "* Organización de múltiples proyectos en una plataforma central."
+            "📆 Mejora de habilidades en diseño con CSS, incluyendo animaciones y layouts complejos.",
+            "📆 Resolución de problemas pequeños en un entorno web.",
+            "📆 Organización de múltiples proyectos en una plataforma central."
         ]
       },
       {
@@ -221,17 +221,17 @@
         "description": "Retos enfocados en el lenguaje de programación Go para resolver problemas y construir pequeños proyectos.",
         "image": "<img> image </img>",
         "stack": [
-          "Next.js", 
           "Go", 
-          "Tailwind"
+          "SQL", 
+          "APIs"
         ],
-        "status": "<strong>Terminado</strong>",
-        "link": "<strong>Repositorio en GitHub</strong>",
+        "status": "Terminado",
+        "link": "Repositorio en GitHub",
         "demo": "No disponible",
         "learnings": [
-            "* Comprensión de conceptos básicos y avanzados del lenguaje Go.",
-            "* Estructuración de proyectos pequeños y su escalabilidad.",
-            "* Uso de Go para manejar concurrencia y operaciones eficientes."
+            "📆 Comprensión de conceptos básicos y avanzados del lenguaje Go.",
+            "📆 Estructuración de proyectos pequeños y su escalabilidad.",
+            "📆 Uso de Go para manejar concurrencia y operaciones eficientes."
         ]
       },
       {
@@ -240,16 +240,16 @@
         "image": "<img> image </img>",
         "stack": [
           "Next.js", 
-          "Go", 
-          "Tailwind"
+          "Tailwind", 
+          "SQL"
         ],
-        "status": "<strong>Terminado</strong>",
-        "link": "<strong>Repositorio en GitHub</strong>",
+        "status": "En proceso",
+        "link": "Repositorio en GitHub",
         "demo": "No disponible",
         "learnings": [
-            "* Integración de Tailwind para la creación rápida de estilos responsivos.",
-            "* Uso de Next.js para la construcción de aplicaciones server-side.",
-            "* Diseño de estructuras de datos para manejar categorías, cuentas y eventos financieros."
+            "🏦 Integración de Tailwind para la creación rápida de estilos responsivos.",
+            "🏦 Uso de Next.js para la construcción de aplicaciones server-side.",
+            "🏦 Diseño de estructuras de datos para manejar categorías, cuentas y eventos financieros."
         ]
       },
       {
@@ -257,17 +257,17 @@
         "description": "Una aplicación móvil para registrar eventos diarios, con categorías y hábitos personalizables. Desarrollada en Swift para iOS y con un backend en Go.",
         "image": "<img> image </img>",
         "stack": [
-          "Next.js", 
+          "Swift", 
           "Go", 
-          "Tailwind"
+          "APIs"
         ],
-        "status": "<strong>Terminado</strong>",
-        "link": "<strong>Repositorio en GitHub</strong>",
+        "status": "En proceso",
+        "link": "Repositorio en GitHub",
         "demo": "No disponible",
         "learnings": [
-            "* Implementación de bases de datos para sincronizar información entre cliente y servidor.",
-            "* Uso de Swift para desarrollar una interfaz de usuario nativa y fluida.",
-            "* Diseño de APIs RESTful con Go para manejar datos de forma eficiente."
+            "🧭 Implementación de bases de datos para sincronizar información entre cliente y servidor.",
+            "🧭 Uso de Swift para desarrollar una interfaz de usuario nativa y fluida.",
+            "🧭 Diseño de APIs RESTful con Go para manejar datos de forma eficiente."
         ]
       },
       {
@@ -275,17 +275,17 @@
         "description": "Serie de retos pequeños para aprender Angular, enfocados en el uso de componentes, servicios y manejo del estado.",
         "image": "<img> image </img>",
         "stack": [
-          "Next.js", 
-          "Go", 
+          "Angular", 
+          "APIs", 
           "Tailwind"
         ],
-        "status": "<strong>Terminado</strong>",
-        "link": "<strong>Repositorio en GitHub</strong>",
+        "status": "Terminado",
+        "link": "Repositorio en GitHub",
         "demo": "No disponible",
         "learnings": [
-            "* Configuración inicial de proyectos Angular y manejo de CLI.",
-            "* Creación de componentes dinámicos e interactivos.",
-            "* Uso de servicios para manejar datos y eventos entre componentes."
+            "📆 Configuración inicial de proyectos Angular y manejo de CLI.",
+            "📆 Creación de componentes dinámicos e interactivos.",
+            "📆 Uso de servicios para manejar datos y eventos entre componentes."
         ]
       }
     ]
@@ -297,5 +297,9 @@
       "github": "<strong>https://github.com/MauGarOla</strong>",
       "portfolio": "<strong>https://mauolagarayportfolio.netlify.app</strong>",
       "resume": "<strong>Curriculum</strong>"
+    },
+    "footer": {
+      "quote": "Nunca dejes de aprender, porque la tecnología nunca deja de evolucionar.",
+      "copyright": "&copy; 2025 Mauricio G. Olagray. Todos los derechos reservados."
     }
   }

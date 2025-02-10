@@ -1,19 +1,305 @@
 {
-    "hero": {
-        "greeting": "Hallo, ich bin ein <strong>Entwickler</strong>, der sich ständig weiterentwickelt. Ich kombiniere Kreativität und Technologie, um <strong>moderne Web- und Mobile-Anwendungen</strong> zu schaffen, die intuitiv und funktional sind."
+  "languages": {
+    "english": "Englisch",
+    "german": "Deutsch",
+    "spanish": "Spanisch"
+  },
+  "theme": {
+    "light": "Hell",
+    "dark": "Dunkel",
+    "system": "System"
+  },
+  "hero": {
+    "section": "Startseite",
+    "name": "<strong>Mauricio <br>G. Olagaray</strong>",
+    "title": "Webentwickler mit Leidenschaft für die Schaffung funktionaler und ansprechender digitaler Erlebnisse.",
+    "description": "Ich bin ein <strong>Webentwickler</strong> mit einer analytischen und kreativen Denkweise, leidenschaftlich darin, Anwendungen zu erstellen, die reale Probleme lösen und das Leben der Menschen verbessern. Mein Ansatz kombiniert Technologie, intuitives Design und effizienten Code."
+  },
+  "about": {
+      "section": "Über mich",
+    "introduction": "Meine Ausbildung in Finanzen hat mir eine solide analytische Basis gegeben, aber meine wahre Leidenschaft habe ich in der Technologie gefunden. Jetzt kombiniere ich beide Welten, um effiziente digitale Lösungen zu entwickeln, mit einem Fokus auf Daten und Prozessoptimierung.",
+    "personal": "Abseits vom Code genieße ich Calisthenics, Yoga und das Erkunden der Natur – Aktivitäten, die mir helfen, ein Gleichgewicht zwischen Geist und Körper zu halten. Mein Ziel ist es, mich als Entwickler weiterzuentwickeln, innovative Projekte zu schaffen und eines Tages bei Google zu arbeiten, um meine Fähigkeiten auf das nächste Level zu bringen."
+  },
+  "skills": {
+    "section": "Fähigkeiten"
+  },
+    "journey": {
+        "section": "Werdegang",
+        "short": {
+        "section": "Zusammenfassung",
+        "entries": 
+        [{
+            "year": "Zukünftig",
+            "title": "Über den Code hinaus ✨",
+            "description": "Teil von <strong>Google</strong> werden. Globaler Einfluss. Beruf und Leidenschaften in Einklang bringen."
+        },
+        {
+            "year": "2025",
+            "title": "Vorbereitung auf das nächste Level 🚀",
+            "description": "Freelance- und persönliche Projekte entwickeln. Technologien verfeinern. Weiter lernen und verbessern."
+        },
+        {
+            "year": "2023 - 2024",
+            "title": "Eintauchen in die Webentwicklung 🌐",
+            "description": "Ich entdecke meine Leidenschaft: Programmierung und Produktentwicklung. Freelance bei <strong>On-running</strong> in der Softwareimplementierung. Praktikum bei <strong>BMW Group</strong> in digitalen Lösungen. Front- und Backend-Entwicklung in persönlichen Anwendungen."
+        },
+        {
+            "year": "2021 - 2022",
+            "title": "Die Programmierung entdecken 🔍",
+            "description": "Als Entwickler bei <strong>Disfruta</strong> habe ich Systeme für Produkt-, Bestell- und Logistikmanagement erstellt. Entwicklung von Finanzverwaltungs- und Kontrollsystemen."
+        },
+        {
+            "year": "2018 - 2023",
+            "title": "Finanzen und Geschäftswelt 💼",
+            "description": "Erfahrung bei <strong>Gabrica, Keller Williams und Ziel</strong> (Investmentfonds), Erwerb von Fähigkeiten in Analyse, Management und Kommunikation. Bachelor in Finanzwesen und öffentlicher Rechnungslegung an der Universidad Anáhuac. 🎓 Erfahrung in Analytik und Unternehmensproblem­lösungen."
+        },
+        {
+            "year": "2002 - 2018",
+            "title": "Deutsche Schule 🇩🇪",
+            "description": "Internationale Ausbildung. Entwicklung von Disziplin und globaler Perspektive."
+        }
+        ]
     },
-    "about": {
-        "title": "Über mich",
-        "paragraph": "Ihre Erfahrung (Übergang von Finanzen zur Programmierung). Hobbys und Werte (Verbindung zur Natur, Yoga, Klettern). Ein professionelles Foto oder eine Illustration von Ihnen. Ihre Ziele (z. B. an bedeutenden Projekten arbeiten oder bei Google tätig sein)."
-    },
-    "skills": {
-        "title": "Fähigkeiten",
-        "paragraph": "Programmiersprachen und Tools (HTML, CSS, JavaScript, React, Next.js, Angular). Bibliotheken oder Frameworks (GSAP, Three.js usw.). Soft Skills (wie Teamarbeit, Problemlösung). Grafische Darstellung: Balken, Symbole oder interaktive Diagramme."
-    },
-    "projects": {
-        "title": "Projekte"
-    },
-    "contact": {
-        "title": "Kontakt"
+    "long": {
+    "section": "Detailliert",
+    "entries": 
+    [
+        {
+        "year": "Zukunft",
+        "title": [
+            "Jenseits des Codes ✨",
+            "Eine Zukunft voller Möglichkeiten"
+        ],
+        "description": [
+            "Mein Ziel ist es, Teil von <strong>Google</strong> zu werden und in einem internationalen Team zu arbeiten, das Kreativität und Technologie vereint. Ich strebe danach, Lösungen zu entwickeln, die das Leben der Menschen positiv beeinflussen, ohne das Gleichgewicht zwischen meinem Berufsleben und meinen Leidenschaften wie Yoga, Meditation und Calisthenics zu verlieren.",
+            "Jeder Schritt bringt mich diesem Ziel näher. Dies ist erst der Anfang."
+        ]
+        },
+        {
+        "year": "2025",
+        "title": [
+            "Vorbereitung auf das nächste Level 🚀",
+            "Meine Horizonte erweitern"
+        ],
+        "description": [
+            "Derzeit entwickle ich persönliche und fremde Projekte. Ich suche optimale Lösungen für Probleme mit TypeScript, Go und Swift. Ich bleibe stets auf dem neuesten Stand und erforsche neue Technologien und Updates, um immer an der Spitze zu bleiben."
+        ]
+        },
+        {
+        "year": "2023 - 2024",
+        "title": [
+            "Vertiefung in die Webentwicklung 🌐",
+            "Ein neuer technischer Anfang"
+        ],
+        "description": [
+            "In dieser Zeit tauchte ich vollständig in die Webentwicklung ein und beherrschte Technologien wie <strong>Next.js, Angular, TypeScript und Go</strong>. Im Rahmen meines Wachstums entwickelte ich eine persönliche Finanz-App, in der ich mein Finanzwissen mit meinen technischen Fähigkeiten kombinierte.", 
+            "Außerdem hatte ich die Gelegenheit, praktische Erfahrungen in der Tech-Branche zu sammeln: Freelance bei <strong>On-running</strong>: Entwicklung innovativer digitaler Lösungen. Praktikum bei <strong>BMW Group</strong>: Implementierung technologischer Tools zur Optimierung von Geschäftsprozessen."
+        ]
+        },
+        {
+        "year": "2021 - 2022",
+        "title": [
+            "Entdeckung der Programmierung 🔍",
+            "Der Moment der Veränderung"
+        ],
+        "description": [
+            "Während meiner Arbeit als Accounting Assistant bei <strong>Angel Venture</strong> entdeckte ich, wie Programmierung Prozesse automatisieren und sich wiederholende Aufgaben vereinfachen kann. Diese Erkenntnis weckte meine Neugier und führte mich in die Welt der Softwareentwicklung.",
+            "Später, in meiner Rolle als Entwickler bei <strong>Disfruta</strong>, entwickelte ich Websysteme zur Optimierung der Verwaltung von Produktkatalogen, Bestellungen und Logistik. Diese Erfahrung ermöglichte es mir, meine Finanzkenntnisse mit dem Potenzial der Technologie zu verbinden."
+        ]
+        },
+        {
+        "year": "2018 - 2023",
+        "title": [
+            "Mein Weg in Finanzen und Business 💼",
+            "Erfahrung in verschiedenen Bereichen"
+        ],
+        "description": [
+            "Meine Karriere in der Finanzwelt brachte mir Schlüsselkompetenzen in Analyse, Management und Kommunikation: General Assistant bei <strong>Gabrica</strong>: Überwachung von Finanztransaktionen und Budgetanalysen. Real Estate Advisor bei <strong>Keller Williams</strong>: Entwicklung maßgeschneiderter Strategien für Kunden und Erstellung innovativer visueller Materialien. Gründer von Ziel: Verwaltung eines Investmentfonds, Risikobewertung und effektive Kommunikation mit Kunden in einem dynamischen Umfeld."
+        ]
+        },
+        {
+        "year": "2019 - 2022",
+        "title": [
+            "Abschluss in Finanz- und Rechnungswesen 🎓",
+            "Erkundung der Finanzwelt"
+        ],
+        "description": [
+            "Während meines Studiums an der <strong>Universidad Anáhuac</strong> entwickelte ich ein starkes Interesse an Daten und Finanzstrukturen. Diese Jahre vermittelten mir nicht nur technisches Wissen, sondern auch analytische Fähigkeiten zur Lösung komplexer Geschäftsprobleme."
+        ]
+        },
+        {
+        "year": "2018",
+        "title": [
+            "Abschluss am Colegio Alemán 🇩🇪",
+            "Ein internationaler Beginn"
+        ],
+        "description": [
+            "Meine Ausbildung am <strong>Colegio Alemán</strong> gab mir eine globale Denkweise sowie eine solide Basis in Disziplin und Organisation – entscheidende Elemente, die meinen akademischen und beruflichen Weg geprägt haben.", "Diese Reise hat gerade erst begonnen. Mit jeder Herausforderung komme ich meinem Ziel näher: Kreativität, Technologie und Strategie zu vereinen, um einen positiven Einfluss auf die Welt zu haben. 🚀✨"
+        ]
+        }
+        
+    ]
     }
-}
+    },
+        "projects": {
+            "section": "Projekte",
+            "entries": [
+        {
+            "name": "<strong>Tiny Piano</strong>",
+            "description": "Ein <strong>kleines interaktives Klavier</strong>, das Töne abspielt, wenn man auf die Tasten klickt.",
+            "image": "./src/assets/images/testImg.png",
+            "stack": [
+            "HTML", 
+            "CSS", 
+            "JavaScript"
+            ],
+            "status": "Abgeschlossen",
+            "link": "Repository auf GitHub",
+            "demo": "Nicht verfügbar",
+            "learnings": [
+                "🎹 Erstellung interaktiver Elemente mit JavaScript-Events.",
+                "🎹 Verwendung von CSS zur Gestaltung eines ansprechenden Designs.",
+                "🎹 DOM-Manipulation zur Integration von Interaktivität."
+            ]
+        },
+        {
+            "name": "<strong>Quote Image</strong>",
+            "description": "Eine Webseite, die <strong>motivierende Bilder</strong> mit zufälligen Zitaten generiert. Implementiert mit React für eine dynamische Benutzeroberfläche.",
+            "image": "./src/assets/images/testImg.png",
+            "stack": [
+            "React", 
+            "APIs", 
+            "CSS"
+            ],
+            "status": "Abgeschlossen",
+            "link": "Repository auf GitHub",
+            "demo": "Nicht verfügbar",
+            "learnings": [
+                "📜 Nutzung von React zur Erstellung wiederverwendbarer Komponenten.",
+                "📜 Generierung dynamischer Inhalte aus Datenarrays.",
+                "📜 Automatisches Herunterladen generierter Bilder im Browser."
+            ]
+        },
+        {
+            "name": "<strong>Garage Sale</strong>",
+            "description": "Eine Webseite zur Anzeige der verbleibenden Artikel eines <strong>Garagenverkaufs</strong>. Erstellt mit Astro für eine optimierte Leistung.",
+            "image": "<img> image </img>",
+            "stack": [
+            "Astro", 
+            "TypeScript", 
+            "CSS"
+            ],
+            "status": "Abgeschlossen",
+            "link": "Repository auf GitHub",
+            "demo": "Nicht verfügbar",
+            "learnings": [
+                "💸 Verwendung von Astro zur Erstellung schneller und leichter Webseiten.",
+                "💸 Optimierung von Benutzeroberflächen für dynamische Listen.",
+                "💸 Responsives Design für mobile Nutzererfahrung."
+            ]
+        },
+        {
+            "name": "<strong>CSS Daily Challenge</strong>",
+            "description": "Eine Sammlung täglicher CSS-Herausforderungen, erstellt mit HTML, CSS und JavaScript. Die Herausforderungen wurden auf einer Webseite mit Astro organisiert.",
+            "image": "<img> image </img>",
+            "stack": [
+            "HTML", 
+            "CSS", 
+            "Astro"
+            ],
+            "status": "Abgeschlossen",
+            "link": "Repository auf GitHub",
+            "demo": "Nicht verfügbar",
+            "learnings": [
+                "📆 Verbesserung der Designfähigkeiten mit CSS, einschließlich Animationen und komplexer Layouts.",
+                "📆 Lösung kleiner Probleme in einer Webumgebung.",
+                "📆 Organisation mehrerer Projekte auf einer zentralen Plattform."
+            ]
+        },
+        {
+            "name": "<strong>Go Daily Challenge</strong>",
+            "description": "Herausforderungen im Bereich der Go-Programmierung zur Lösung von Problemen und Erstellung kleiner Projekte.",
+            "image": "<img> image </img>",
+            "stack": [
+            "Go", 
+            "SQL", 
+            "APIs"
+            ],
+            "status": "Abgeschlossen",
+            "link": "Repository auf GitHub",
+            "demo": "Nicht verfügbar",
+            "learnings": [
+                "📆 Verständnis grundlegender und fortgeschrittener Konzepte der Go-Sprache.",
+                "📆 Strukturierung kleiner Projekte und Skalierbarkeit.",
+                "📆 Nutzung von Go für effiziente Nebenläufigkeit und Operationen."
+            ]
+        },
+        {
+            "name": "<strong>Persönliches Finanzprojekt</strong>",
+            "description": "Eine Anwendung zur Verwaltung persönlicher Finanzen, entwickelt mit Next.js und Tailwind CSS.",
+            "image": "<img> image </img>",
+            "stack": [
+            "Next.js", 
+            "Tailwind", 
+            "SQL"
+            ],
+            "status": "In Arbeit",
+            "link": "Repository auf GitHub",
+            "demo": "Nicht verfügbar",
+            "learnings": [
+                "🏦 Integration von Tailwind für die schnelle Erstellung responsiver Styles.",
+                "🏦 Verwendung von Next.js für die Entwicklung serverseitiger Anwendungen.",
+                "🏦 Entwurf von Datenstrukturen zur Verwaltung von Kategorien, Konten und Finanzereignissen."
+            ]
+        },
+        {
+            "name": "<strong>Life Mapper</strong>",
+            "description": "Eine mobile Anwendung zur Erfassung täglicher Ereignisse mit anpassbaren Kategorien und Gewohnheiten. Entwickelt mit Swift für iOS und einem Backend in Go.",
+            "image": "<img> image </img>",
+            "stack": [
+            "Swift", 
+            "Go", 
+            "APIs"
+            ],
+            "status": "In Arbeit",
+            "link": "Repository auf GitHub",
+            "demo": "Nicht verfügbar",
+            "learnings": [
+                "🧭 Implementierung von Datenbanken zur Synchronisierung von Informationen zwischen Client und Server.",
+                "🧭 Nutzung von Swift zur Entwicklung einer nativen und flüssigen Benutzeroberfläche.",
+                "🧭 Entwurf von RESTful APIs mit Go zur effizienten Datenverarbeitung."
+            ]
+        },
+        {
+            "name": "<strong>Angular Daily Challenge</strong>",
+            "description": "Eine Serie kleiner Herausforderungen zum Erlernen von Angular, mit Fokus auf Komponenten, Services und Zustandsmanagement.",
+            "image": "<img> image </img>",
+            "stack": [
+            "Angular", 
+            "APIs", 
+            "Tailwind"
+            ],
+            "status": "Abgeschlossen",
+            "link": "Repository auf GitHub",
+            "demo": "Nicht verfügbar",
+            "learnings": [
+                "📆 Erste Konfiguration von Angular-Projekten und Nutzung der CLI.",
+                "📆 Erstellung dynamischer und interaktiver Komponenten.",
+                "📆 Nutzung von Services zur Verwaltung von Daten und Ereignissen zwischen Komponenten."
+            ]
+        }
+        ]
+        },
+        "contact": {
+        "section": "Kontakt",
+        "email": "<strong>ma.ga.ol@hotmail.com</strong>",
+        "linkedin": "<strong>https://de.linkedin.com/in/mauriciogolagaray/en</strong>",
+        "github": "<strong>https://github.com/MauGarOla</strong>",
+        "portfolio": "<strong>https://mauolagarayportfolio.netlify.app</strong>",
+        "resume": "<strong>Lebenslauf</strong>"
+        },
+        "footer": {
+        "quote": "Höre niemals auf zu lernen, denn die Technologie hört niemals auf, sich weiterzuentwickeln.",
+        "copyright": "&copy; 2025 Mauricio G. Olagaray. Alle Rechte vorbehalten."
+        }
+    }
