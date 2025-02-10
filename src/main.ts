@@ -103,7 +103,18 @@ if (savedTheme) {
 
 document.addEventListener("DOMContentLoaded", () => {
   const canvas = document.getElementById("color-picker") as HTMLCanvasElement;
-  const ctx = canvas.getContext("2d")!;
+
+  if (!canvas) {
+    console.error("⚠️ Didn't find the canvas on the DOM");
+    return;
+  }
+
+  const ctx = canvas.getContext("2d");
+  if (!ctx) {
+    console.error("⚠️ Couldn't get the 2D context from the canvas");
+    return;
+  }
+
   const indicator = document.getElementById("color-indicator") as HTMLDivElement;
   let isDragging = false;
 
