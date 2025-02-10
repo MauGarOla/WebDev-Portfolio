@@ -27,12 +27,12 @@ body.dark {
   --action: #81E6D9;
   --highlight: #F6AD55;
   --text-background: #00000060;
-  --color-picker1: #8B0000;
-  --color-picker2: #B9770E;
-  --color-picker3: #1E5631;
-  --color-picker4: #1B4F72;
-  --color-picker5: #4B0082;
-  --color-picker6: #8B0000;
+  --color-picker1: #D1495B;
+  --color-picker2: #E9B44C;
+  --color-picker3: #50A773;
+  --color-picker4: #3587A4;
+  --color-picker5: #8661C1;
+  --color-picker6: #D1495B;
 }
 
 /* Background */
@@ -104,6 +104,15 @@ h2 {
 
 h3 {
   font-size: clamp(1.2rem, 4vw, 3rem);
+}
+
+h4 {
+
+}
+
+h5 {
+  margin: 0;
+  padding: 0;
 }
 
 /* Navbar */
@@ -397,7 +406,12 @@ button {
 #journey label.journey-zoom img {
   width: clamp(150px, 40vw, 500px);
   margin-left: 35vw;
-  transform: translateY(-100px);
+  transform: translateY(-140px) scale(.8);
+  transition: all .4s ease-in-out;
+}
+
+#journey label.journey-zoom img:hover {
+  transform: translateY(-140px) scale(1);
 }
 
 #journey ul {
