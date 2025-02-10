@@ -117,19 +117,34 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.style.setProperty("--action", color);
   };
 
-  const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-  gradient.addColorStop(0, "#ff0000");
-  gradient.addColorStop(0.17, "#ffff00");
-  gradient.addColorStop(0.34, "#00ff00");
-  gradient.addColorStop(0.51, "#00ffff");
-  gradient.addColorStop(0.68, "#0000ff");
-  gradient.addColorStop(0.85, "#ff00ff");
-  gradient.addColorStop(1, "#ff0000");
+  const aplicarGradiente = () => {
+    const body = document.body;
+    const gradientColor1 = getComputedStyle(body).getPropertyValue('--color-picker1').trim();
+    const gradientColor2 = getComputedStyle(body).getPropertyValue('--color-picker2').trim();
+    const gradientColor3 = getComputedStyle(body).getPropertyValue('--color-picker3').trim();
+    const gradientColor4 = getComputedStyle(body).getPropertyValue('--color-picker4').trim();
+    const gradientColor5 = getComputedStyle(body).getPropertyValue('--color-picker5').trim();
+    const gradientColor6 = getComputedStyle(body).getPropertyValue('--color-picker6').trim();
 
-  ctx.fillStyle = gradient;
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
+    const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+    gradient.addColorStop(0, gradientColor1); 
+    gradient.addColorStop(0.2, gradientColor2);
+    gradient.addColorStop(0.4, gradientColor3);
+    gradient.addColorStop(0.6, gradientColor4);
+    gradient.addColorStop(0.8, gradientColor5);
+    gradient.addColorStop(1, gradientColor6);
 
-  const initialY = Math.floor(canvas.height * 0.5);
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  };
+
+  aplicarGradiente();
+
+  const observer = new MutationObserver(() => aplicarGradiente());
+  observer.observe(document.body, { attributes: true, attributeFilter: ["class"] });
+
+  const initialY = Math.floor(canvas.height * 0.1);
   setIndicatorPosition(initialY);
 
   canvas.addEventListener("mousedown", (event) => {

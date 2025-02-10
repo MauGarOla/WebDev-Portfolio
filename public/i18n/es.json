@@ -1,151 +1,146 @@
 {
-    "languages": {
-      "english": "Inlgés",
-      "german": "Alemán",
-      "spanish": "Español"
-    },
-    "theme": {
-      "light": "Claro",
-      "dark": "Oscuro",
-      "system": "Sistema"
-    },
-    "hero": {
-      "section": "Inicio",
-      "name": "<strong>Mauricio <br>G. Olagaray</strong>",
-      "title": "Desarrollador web apasionado por crear experiencias digitales funcionales y atractivas.",
-      "description": "Soy un <strong>desarrollador web</strong> con una mentalidad <strong>analítica</strong> y <strong>creativa</strong>, apasionado por construir aplicaciones que <strong>resuelvan problemas reales</strong> y mejoren la vida de las personas. Mi enfoque combina <strong>tecnología</strong>, <strong>diseño intuitivo</strong> y <strong>eficiencia en el código</strong>."
-    },
-    "about": {
-        "section": "Sobre mi",
-      "introduction": "Mi formación en <strong>Finanzas</strong> me dio una base <strong>analítica</strong> sólida, pero encontré mi verdadera <strong>pasión</strong> en la <strong>tecnología</strong>. Ahora, combino ambos mundos para desarrollar <strong>soluciones digitales eficientes</strong>, con un enfoque en <strong>datos</strong> y <strong>optimización de procesos</strong>.",
-      "personal": "Fuera del código, disfruto la <strong>calistenia</strong>, el <strong>yoga</strong> y explorar la <strong>naturaleza</strong>, actividades que me ayudan a mantener el <strong>equilibrio</strong> entre <strong>mente y cuerpo</strong>. Mi meta es seguir <strong>creciendo</strong> como <strong>desarrollador</strong>, crear <strong>proyectos innovadores</strong> y, algún día, <strong>trabajar en Google</strong> para llevar mis habilidades al <strong>siguiente nivel</strong>."
-    },
-    "skills": {
-      "section": "Habilidades"
-    },
-    "journey": {
-        "section": "Trayectoria",
-      "short": {
-        "section": "Resumen",
-        "entries": 
-        [{
-          "year": "Por venir",
-          "title": "Más allá del código ✨",
-          "description": "Mi objetivo es formar parte de Google, combinando creatividad y tecnología para desarrollar soluciones con impacto global. Busco equilibrar mi vida profesional con mis pasiones: yoga, escalada y calistenia."
-        },
-        {
+  "languages": {
+    "english": "Inlgés",
+    "german": "Alemán",
+    "spanish": "Español"
+  },
+  "theme": {
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema"
+  },
+  "hero": {
+    "section": "Inicio",
+    "name": "<strong>Mauricio <br>G. Olagaray</strong>",
+    "title": "Desarrollador web apasionado por crear experiencias digitales funcionales y atractivas.",
+    "description": "Soy un <strong>desarrollador web</strong> con una mentalidad analítica y creativa, apasionado por construir aplicaciones que resuelvan problemas reales y mejoren la vida de las personas. Mi enfoque combina tecnología, diseño intuitivo y eficiencia en el código."
+  },
+  "about": {
+      "section": "Sobre mi",
+    "introduction": "Mi formación en Finanzas me dio una base analítica sólida, pero encontré mi verdadera pasión en la tecnología. Ahora, combino ambos mundos para desarrollar soluciones digitales eficientes, con un enfoque en datos y optimización de procesos.",
+    "personal": "Fuera del código, disfruto la calistenia, el yoga y explorar la naturaleza, actividades que me ayudan a mantener el equilibrio entre mente y cuerpo. Mi meta es seguir creciendo como desarrollador, crear proyectos innovadores y, algún día, trabajar en Google para llevar mis habilidades al siguiente nivel."
+  },
+  "skills": {
+    "section": "Habilidades"
+  },
+  "journey": {
+      "section": "Trayectoria",
+    "short": {
+      "section": "Resumen",
+      "entries": 
+      [{
+        "year": "Por venir",
+        "title": "Más allá del código ✨",
+        "description": "Formar parte de <strong>Google</strong>. Impacto global. Equilibrar mi vida profesional con mis pasiones."
+      },
+      {
+        "year": "2025",
+        "title": "Preparándome para el siguiente nivel 🚀",
+        "description": "Desarrollar proyectos freelance y personales. Perfeccionar tecnologías. Seguir aprendiendo y mejorando."
+      },
+      {
+        "year": "2023 - 2024",
+        "title": "Inmersión en el desarrollo web 🌐",
+        "description": "Encuentro mi pasión, la programación y el desarrollo de productos. Freelance en <strong>On-running</strong> en implementación de software. Practicante en <strong>BMW Group</strong> en soluciones digitales. Desarrollo de Front y Backend en aplicaciones personales. "
+      },
+      {
+        "year": "2021 - 2022",
+        "title": "Descubriendo la programación 🔍",
+        "description": "De desarrollador en <strong>Disfruta</strong>, creé sistemas para gestión de productos, pedidos y logística. Creación sistemas de gestión y control financieros. "
+      },
+      {
+        "year": "2018 - 2023",
+        "title": "Finanzas y Negocios 💼",
+        "description": "Experiencia en <strong>Gabrica, Keller Williams y Ziel </strong>(fondo de inversión), adquiriendo habilidades en análisis, gestión y comunicación. Licenciatura en Finanzas y Contaduría Pública en la Universidad Anáhuac. 🎓 Experiencia en analítica y resolución de problemas empresariales."
+      },
+      {
+        "year": "2002 - 2018",
+        "title": "Colegio Alemán 🇩🇪",
+        "description": "Formación internacional. Desarrollo de disciplina y visión global."
+      }
+      ]
+      },
+    "long": {
+      "section": "Detallada",
+      "entries": 
+      [
+          {
+          "year": "Futuro",
+          "title": [
+              "Más allá del código ✨",
+              "Un futuro lleno de posibilidades"
+          ],
+          "description": [
+              "Mi meta es formar parte de <strong>Google</strong> y contribuir a un equipo internacional que combine creatividad y tecnología. Aspiro a desarrollar soluciones que impacten positivamente a las personas, sin perder el equilibrio entre mi vida profesional y mis pasiones como: el yoga, la meditación y la calistenia.",
+              "Cada paso que doy me acerca más a ese objetivo. Esto es solo el comienzo."
+          ]
+          },
+          {
           "year": "2025",
-          "title": "<strong>Preparándome para el siguiente nivel 🚀</strong>",
-          "description": "Estoy trabajando en <strong>proyectos</strong>, buscando las <strong>soluciones óptimas</strong> a problemas y desarrollando <strong>aplicaciones</strong> con <strong>TypeScript</strong>, <strong>Go</strong> y <strong>Swift</strong>, sin dejar de explorar <strong>nuevas tecnologías</strong>."
-        },
-        {
+          "title": [
+             "Preparándome para el siguiente nivel 🚀",
+              "Ampliando mis horizontes"
+          ],
+          "description": [
+              "Actualmente estoy desarrollando proyectos personales y a terceros. Busco las soluciones optimas a problemas con TypeScript, Go y Swift. Me mantengo explorando nuevas tecnologías y actualizaciones para estar siempre a la vanguardia."
+          ]
+          },
+          {
           "year": "2023 - 2024",
-          "title": "<strong>Inmersión en el desarrollo web 🌐</strong>",
-          "description": "Dominé <strong>Next.js</strong>, <strong>Angular</strong>, <strong>TypeScript</strong> y <strong>Go</strong>, desarrollé una <strong>app de finanzas personales</strong> y trabajé como <strong>freelance</strong> en <strong>On-running</strong> y practicante en <strong>BMW Group</strong>."
-        },
-        {
+          "title": [
+              "Inmersión en el Desarrollo Web 🌐",
+              "Un nuevo comienzo técnico"
+          ],
+          "description": [
+              "Durante este periodo, me sumergí por completo en el desarrollo web, dominando tecnologías como Next.js, Angular, TypeScript y Go. Como parte de mi crecimiento, creé una aplicación de finanzas personales, combinando mis conocimientos financieros con mis habilidades técnicas.", 
+              "Además, tuve la oportunidad adquirir experiencia práctica en la industria tecnológica: Freelance en On-running: Desarrollo de soluciones digitales innovadoras. Practicante en BMW Group: Implementación de herramientas tecnológicas para optimizar procesos empresariales."
+          ]
+          },
+          {
           "year": "2021 - 2022",
-          "title": "<strong>Descubriendo la programación 🔍</strong>",
-          "description": "Desde mi experiencia en finanzas, descubrí cómo la tecnología optimiza procesos. Como <strong>Desarrollador en Disfruta</strong>, creé sistemas para gestión de productos, pedidos y logística."
-        },
-        {
+          "title": [
+              "Descubriendo la programación 🔍",
+              "El momento de cambio"
+          ],
+          "description": [
+              "Mientras trabajaba como Accounting Assistant en Angel Venture, descubrí cómo la programación podía automatizar procesos y simplificar tareas repetitivas. Este hallazgo despertó mi curiosidad y me llevó a explorar el mundo del desarrollo.",
+              "Más tarde, en mi rol como Desarrollador en Disfruta, creé sistemas web para optimizar la gestión de catálogos de productos, pedidos y logística. Esta experiencia me permitió conectar mi formación en finanzas con el potencial de la tecnología."
+          ]
+          },
+          {
           "year": "2018 - 2023",
-          "title": "<strong>Finanzas y Negocios 💼</strong>",
-          "description": "Experiencia en Gabrica, Keller Williams y Ziel (fondo de inversión), adquiriendo habilidades en <strong>análisis, gestión y comunicación.</strong>"
-        },
-        {
+          "title": [
+              "<strong>Mi camino en Finanzas y Negocios 💼</strong>",
+              "Experiencia en diversas áreas"
+          ],
+          "description": [
+              "Mi trayectoria en el mundo financiero me brindó habilidades clave en análisis, gestión y comunicación: General Assistant en Gabrica: Supervisión de transacciones financieras y análisis de presupuestos. Real Estate Advisor en Keller Williams: Desarrollo de estrategias personalizadas para clientes y creación de materiales visuales innovadores. Fundador de Ziel: Gestión de un fondo de inversión, análisis de riesgos y comunicación efectiva con clientes en un entorno dinámico."
+          ]
+          },
+          {
           "year": "2019 - 2022",
-          "title": "<strong>Universidad Anáhuac 🎓</strong>",
-          "description": "Estudié Finanzas y Contaduría Pública, desarrollando habilidades analíticas y resolución de problemas empresariales."
-        },
-        {
+          "title": [
+              "<strong>Título en Finanzas y Contaduría Pública 🎓</strong>",
+              "Explorando el mundo financiero"
+          ],
+          "description": [
+              "Mientras estudiaba en la Universidad Anáhuac, desarrollé un fuerte interés por los datos y la estructura financiera. Estos años me brindaron no solo conocimientos técnicos, sino también habilidades analíticas para resolver problemas empresariales complejos."
+          ]
+          },
+          {
           "year": "2018",
-          "title": "<strong>Colegio Alemán 🇩🇪</strong>",
-          "description": "Formación internacional que me dio disciplina y visión global."
-        }
-        ]
-        },
-      "long": {
-        "section": "Detallada",
-        "entries": 
-        [
-            {
-            "year": "Futuro",
-            "title": [
-                "<strong>Más allá del código ✨</strong>",
-                "Un futuro lleno de posibilidades"
-            ],
-            "description": [
-                "Mi <strong>meta</strong> es formar parte de <strong>Google</strong> y contribuir a un equipo <strong>internacional</strong> que combine <strong>creatividad</strong> y <strong>tecnología</strong>. Aspiro a desarrollar <strong>soluciones</strong> que impacten positivamente a las personas, sin perder el <strong>equilibrio</strong> entre mi <strong>vida profesional</strong> y mis <strong>pasiones</strong>: el <strong>yoga</strong>, la <strong>escalada</strong> y la <strong>calistenia</strong>.",
-                "Cada paso que doy me acerca más a ese objetivo. Esto es solo el comienzo."
-            ]
-            },
-            {
-            "year": "2025",
-            "title": [
-                "<strong>Preparándome para el siguiente nivel 🚀</strong>",
-                "Ampliando mis horizontes"
-            ],
-            "description": [
-                "Actualmente estoy desarrollando proyectos personales y a terceros. Buscando las soluciones optimas a problemas con <strong>TypeScript, Go y Swift.</strong> Me mantengo explorando nuevas tecnologías y actualizaciones para estar siempre a la vanguardia."
-            ]
-            },
-            {
-            "year": "2023 - 2024",
-            "title": [
-                "<strong>Inmersión en el Desarrollo Web 🌐</strong>",
-                "Un nuevo comienzo técnico"
-            ],
-            "description": [
-                "Durante este periodo, me sumergí por completo en el desarrollo web, dominando tecnologías como Next.js, Angular, TypeScript y Go. Como parte de mi crecimiento, creé una aplicación de finanzas personales, combinando mis conocimientos financieros con mis habilidades técnicas.", 
-                "Además, tuve la oportunidad adquirir experiencia práctica en la industria tecnológica: Freelance en On-running: Desarrollo de soluciones digitales innovadoras. Practicante en BMW Group: Implementación de herramientas tecnológicas para optimizar procesos empresariales."
-            ]
-            },
-            {
-            "year": "2021 - 2022",
-            "title": [
-                "<strong>Descubriendo la programación 🔍</strong>",
-                "El momento de cambio"
-            ],
-            "description": [
-                "Mientras trabajaba como Accounting Assistant en Angel Venture, descubrí cómo la programación podía automatizar procesos y simplificar tareas repetitivas. Este hallazgo despertó mi curiosidad y me llevó a explorar el mundo del desarrollo.",
-                "Más tarde, en mi rol como Desarrollador en Disfruta, creé sistemas web para optimizar la gestión de catálogos de productos, pedidos y logística. Esta experiencia me permitió conectar mi formación en finanzas con el potencial de la tecnología."
-            ]
-            },
-            {
-            "year": "2018 - 2023",
-            "title": [
-                "<strong>Mi camino en Finanzas y Negocios 💼</strong>",
-                "Experiencia en diversas áreas"
-            ],
-            "description": [
-                "Mi trayectoria en el mundo financiero me brindó habilidades clave en análisis, gestión y comunicación: General Assistant en Gabrica: Supervisión de transacciones financieras y análisis de presupuestos. Real Estate Advisor en Keller Williams: Desarrollo de estrategias personalizadas para clientes y creación de materiales visuales innovadores. Fundador de Ziel: Gestión de un fondo de inversión, análisis de riesgos y comunicación efectiva con clientes en un entorno dinámico."
-            ]
-            },
-            {
-            "year": "2019 - 2022",
-            "title": [
-                "<strong>Título en Finanzas y Contaduría Pública 🎓</strong>",
-                "Explorando el mundo financiero"
-            ],
-            "description": [
-                "Mientras estudiaba en la Universidad Anáhuac, desarrollé un fuerte interés por los datos y la estructura financiera. Estos años me brindaron no solo conocimientos técnicos, sino también habilidades analíticas para resolver problemas empresariales complejos."
-            ]
-            },
-            {
-            "year": "2018",
-            "title": [
-                "<strong>Graduación del Colegio Alemán 🇩🇪</strong>",
-                "Un comienzo internacional"
-            ],
-            "description": [
-                "Mi formación en el Colegio Alemán me dio una mentalidad global y una base sólida en disciplina y organización, elementos clave que han guiado mi camino académico y profesional.", "Este viaje apenas comienza. Con cada desafío, me acerco más a mi meta: combinar creatividad, tecnología y estrategia para generar impacto en el mundo. 🚀✨"
-            ]
-            }
-            
-        ]
-        }
-    },
+          "title": [
+              "<strong>Graduación del Colegio Alemán 🇩🇪</strong>",
+              "Un comienzo internacional"
+          ],
+          "description": [
+              "Mi formación en el Colegio Alemán me dio una mentalidad global y una base sólida en disciplina y organización, elementos clave que han guiado mi camino académico y profesional.", "Este viaje apenas comienza. Con cada desafío, me acerco más a mi meta: combinar creatividad, tecnología y estrategia para generar impacto en el mundo. 🚀✨"
+          ]
+          }
+          
+      ]
+      }
+  },
     "projects": {
         "section": "Proyectos",
         "entries": [
