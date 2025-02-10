@@ -102,76 +102,68 @@ if (savedTheme) {
 //Color-Selector start
 
 document.addEventListener("DOMContentLoaded", () => {
-  const canvas = document.getElementById("color-picker") as HTMLCanvasElement;
+  setTimeout(() => {
 
-  if (!canvas) {
-    console.error("⚠️ Didn't find the canvas on the DOM");
-    return;
-  }
-
-  const ctx = canvas.getContext("2d");
-  if (!ctx) {
-    console.error("⚠️ Couldn't get the 2D context from the canvas");
-    return;
-  }
-
-  const indicator = document.getElementById("color-indicator") as HTMLDivElement;
-  let isDragging = false;
-
-  const setIndicatorPosition = (y: number) => {
-    y = Math.max(0, Math.min(y, canvas.height - 1));
-    indicator.style.top = `${y}px`;
-
-    const pixel = ctx.getImageData(0, y, 1, 1).data;
-    const color = `rgb(${pixel[0]}, ${pixel[1]}, ${pixel[2]})`;
-
-    document.body.style.setProperty("--action", color);
-  };
-
-  const aplicarGradiente = () => {
-    const body = document.body;
-    const gradientColor1 = getComputedStyle(body).getPropertyValue('--color-picker1').trim();
-    const gradientColor2 = getComputedStyle(body).getPropertyValue('--color-picker2').trim();
-    const gradientColor3 = getComputedStyle(body).getPropertyValue('--color-picker3').trim();
-    const gradientColor4 = getComputedStyle(body).getPropertyValue('--color-picker4').trim();
-    const gradientColor5 = getComputedStyle(body).getPropertyValue('--color-picker5').trim();
-    const gradientColor6 = getComputedStyle(body).getPropertyValue('--color-picker6').trim();
-
-    const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-    gradient.addColorStop(0, gradientColor1); 
-    gradient.addColorStop(0.2, gradientColor2);
-    gradient.addColorStop(0.4, gradientColor3);
-    gradient.addColorStop(0.6, gradientColor4);
-    gradient.addColorStop(0.8, gradientColor5);
-    gradient.addColorStop(1, gradientColor6);
-
-    ctx.fillStyle = gradient;
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-  };
-
-  aplicarGradiente();
-
-  const observer = new MutationObserver(() => aplicarGradiente());
-  observer.observe(document.body, { attributes: true, attributeFilter: ["class"] });
-
-  const initialY = Math.floor(canvas.height * 0.1);
-  setIndicatorPosition(initialY);
-
-  canvas.addEventListener("mousedown", (event) => {
-    isDragging = true;
-    setIndicatorPosition(event.offsetY);
-  });
-
-  canvas.addEventListener("mousemove", (event) => {
-    if (isDragging) {
+    const canvas = document.getElementById("color-picker") as HTMLCanvasElement;
+    const ctx = canvas.getContext("2d")!;
+    const indicator = document.getElementById("color-indicator") as HTMLDivElement;
+    let isDragging = false;
+  
+    const setIndicatorPosition = (y: number) => {
+      y = Math.max(0, Math.min(y, canvas.height - 1));
+      indicator.style.top = `${y}px`;
+  
+      const pixel = ctx.getImageData(0, y, 1, 1).data;
+      const color = `rgb(${pixel[0]}, ${pixel[1]}, ${pixel[2]})`;
+  
+      document.body.style.setProperty("--action", color);
+    };
+  
+    const aplicarGradiente = () => {
+      const body = document.body;
+      const gradientColor1 = getComputedStyle(body).getPropertyValue('--color-picker1').trim();
+      const gradientColor2 = getComputedStyle(body).getPropertyValue('--color-picker2').trim();
+      const gradientColor3 = getComputedStyle(body).getPropertyValue('--color-picker3').trim();
+      const gradientColor4 = getComputedStyle(body).getPropertyValue('--color-picker4').trim();
+      const gradientColor5 = getComputedStyle(body).getPropertyValue('--color-picker5').trim();
+      const gradientColor6 = getComputedStyle(body).getPropertyValue('--color-picker6').trim();
+  
+      const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+      gradient.addColorStop(0, gradientColor1); 
+      gradient.addColorStop(0.2, gradientColor2);
+      gradient.addColorStop(0.4, gradientColor3);
+      gradient.addColorStop(0.6, gradientColor4);
+      gradient.addColorStop(0.8, gradientColor5);
+      gradient.addColorStop(1, gradientColor6);
+  
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+  
+    };
+  
+    aplicarGradiente();
+  
+    const observer = new MutationObserver(() => aplicarGradiente());
+    observer.observe(document.body, { attributes: true, attributeFilter: ["class"] });
+  
+    const initialY = Math.floor(canvas.height * 0.1);
+    setIndicatorPosition(initialY);
+  
+    canvas.addEventListener("mousedown", (event) => {
+      isDragging = true;
       setIndicatorPosition(event.offsetY);
-    }
-  });
-
-  document.addEventListener("mouseup", () => {
-    isDragging = false;
-  });
+    });
+  
+    canvas.addEventListener("mousemove", (event) => {
+      if (isDragging) {
+        setIndicatorPosition(event.offsetY);
+      }
+    });
+  
+    document.addEventListener("mouseup", () => {
+      isDragging = false;
+    });
+  }, 500)
 });
 
 //Color-Selector finish
