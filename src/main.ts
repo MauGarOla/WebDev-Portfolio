@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("mouseup", () => {
       isDragging = false;
     });
-  }, 500)
+  }, 200)
 });
 
 //Color-Selector finish

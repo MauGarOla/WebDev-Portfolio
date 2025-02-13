@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mau G. Olagaray Portfolio</title>
   <link rel="stylesheet" href="./src/styles/style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_left,arrow_right,brightness_2,construction,contact_mail,dark_mode,format_paint,home,home_storage,light_mode,menu,person,routine,sunny,tactic,translate" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_left,arrow_right,brightness_2,construction,contact_mail,dark_mode,description,email,format_paint,home,home_storage,light_mode,menu,person,routine,sunny,tactic,translate" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
 </head>
 <body>
 
@@ -38,7 +39,7 @@
             <span class="material-symbols-outlined list-icon">home_storage</span>
             <span class="tooltip" data-key="projects.section"></span>
           </a></li>
-          <li><a href="#contact">
+          <li><a href="#footer">
             <span class="material-symbols-outlined list-icon">contact_mail</span>
             <span class="tooltip" data-key="contact.section"></span>
           </a></li>
@@ -101,6 +102,28 @@
       <section>
         <h1 data-key="hero.name"></h1>
         <p data-key="hero.title"></p>
+        <ul class="social-links">
+          <li><a target="_blank" href="mailto:ma.ga.ol@hotmial.com">
+            <span class="material-symbols-outlined contact-icon">email</span>
+            <span class="tooltip" data-key="contact.email"></span>
+          </a></li>
+          <li><a target="_blank" href="https://de.linkedin.com/in/mauriciogolagaray/en">
+            <span class="contact-icon svg-icon"><svg width="24" height="24" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+              <path xmlns="http://www.w3.org/2000/svg" d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"/>
+          </svg></span>
+            <span class="tooltip"  data-key="contact.linkedin"></span>
+          </a></li>
+          <li><a target="_blank" href="https://github.com/MauGarOla">
+            <span class="contact-icon svg-icon"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.66-.22.66-.48v-1.69c-2.78.6-3.37-1.34-3.37-1.34-.45-1.14-1.1-1.45-1.1-1.45-.9-.61.07-.6.07-.6 1 .07 1.53 1.04 1.53 1.04.88 1.51 2.3 1.07 2.86.82.09-.64.34-1.07.62-1.31-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.43 9.43 0 0 1 12 6.8c.85.004 1.71.11 2.5.32 1.9-1.29 2.74-1.02 2.74-1.02.55 1.38.2 2.4.1 2.65.64.7 1.02 1.6 1.02 2.69 0 3.84-2.34 4.69-4.57 4.94.36.31.67.92.67 1.85v2.75c0 .26.16.58.67.48A10.004 10.004 0 0 0 22 12c0-5.52-4.48-10-10-10z"/>
+          </svg></span>
+            <span class="tooltip" data-key="contact.github"></span>
+          </a></li>
+          <li><a target="_blank" href="https://mauolagarayportfolio.netlify.app">
+            <span class="material-symbols-outlined contact-icon">description</span>
+            <span class="tooltip" data-key="contact.resume"></span>
+          </a></li>
+        </ul>
       </section>
       <img src="./src/assets/images/avatar.png" alt="Avatar" class="avatar">
     </section>
@@ -205,6 +228,7 @@
         <label class="journey-zoom" for="journey-switcher">
           <img src="src/assets/images/zoom.png" alt="Zoom in and out">
         </label>
+        <span class="tooltip">See details</span>
 
         <!-- Short Journey -->
         <section id="journey-short">
@@ -361,7 +385,7 @@
               <section class="tags">
                 <span class="status" data-key="projects.entries.0.status"></span>
                 <section class="links">
-                  <a  href="#projects" class="code-btn">Code</a>
+                  <a target="_blank" href="https://github.com/MauGarOla/tiny-piano" class="code-btn">Code</a>
                   <span class="tooltip" data-key="projects.entries.0.link"></span>
                   <a  href="#projects" class="demo-btn">Demo</a>
                   <span class="tooltip" data-key="projects.entries.0.demo"></span>
@@ -392,7 +416,7 @@
               <section class="tags">
                 <span class="status" data-key="projects.entries.1.status"></span>
                 <section class="links">
-                  <a  href="#projects" class="code-btn">Code</a>
+                  <a target="_blank" href="https://github.com/MauGarOla/quote-image" class="code-btn">Code</a>
                   <span class="tooltip" data-key="projects.entries.1.link"></span>
                   <a  href="#projects" class="demo-btn">Demo</a>
                   <span class="tooltip" data-key="projects.entries.1.demo"></span>
@@ -423,7 +447,7 @@
               <section class="tags">
                 <span class="status" data-key="projects.entries.2.status"></span>
                 <section class="links">
-                  <a  href="#projects" class="code-btn">Code</a>
+                  <a target="_blank" href="https://github.com/MauGarOla/garage-sale" class="code-btn">Code</a>
                   <span class="tooltip" data-key="projects.entries.2.link"></span>
                   <a  href="#projects" class="demo-btn">Demo</a>
                   <span class="tooltip" data-key="projects.entries.2.demo"></span>
@@ -454,9 +478,9 @@
               <section class="tags">
                 <span class="status" data-key="projects.entries.3.status"></span>
                 <section class="links">
-                  <a  href="#projects" class="code-btn">Code</a>
+                  <a target="_blank" href="https://github.com/MauGarOla/css-daily-challenge" class="code-btn">Code</a>
                   <span class="tooltip" data-key="projects.entries.3.link"></span>
-                  <a  href="#projects" class="demo-btn">Demo</a>
+                  <a  href="https://maugarola-csschallenge.netlify.app" class="demo-btn">Demo</a>
                   <span class="tooltip" data-key="projects.entries.3.demo"></span>
                 </setion>
               </section>
@@ -485,7 +509,7 @@
               <section class="tags">
                 <span class="status" data-key="projects.entries.4.status"></span>
                 <section class="links">
-                  <a  href="#projects" class="code-btn">Code</a>
+                  <a target="_blank" href="https://github.com/MauGarOla/go-projects" class="code-btn">Code</a>
                   <span class="tooltip" data-key="projects.entries.4.link"></span>
                   <a  href="#projects" class="demo-btn">Demo</a>
                   <span class="tooltip" data-key="projects.entries.4.demo"></span>
@@ -516,7 +540,7 @@
               <section class="tags">
                 <span class="status" data-key="projects.entries.5.status"></span>
                 <section class="links">
-                  <a  href="#projects" class="code-btn">Code</a>
+                  <a target="_blank" href="https://github.com/MauGarOla/personal-finance-v1" class="code-btn">Code</a>
                   <span class="tooltip" data-key="projects.entries.5.link"></span>
                   <a  href="#projects" class="demo-btn">Demo</a>
                   <span class="tooltip" data-key="projects.entries.5.demo"></span>
@@ -547,7 +571,7 @@
               <section class="tags">
                 <span class="status" data-key="projects.entries.6.status"></span>
                 <section class="links">
-                  <a  href="#projects" class="code-btn">Code</a>
+                  <a target="_blank" href="https://github.com/MauGarOla/life-mapper" class="code-btn">Code</a>
                   <span class="tooltip" data-key="projects.entries.6.link"></span>
                   <a  href="#projects" class="demo-btn">Demo</a>
                   <span class="tooltip" data-key="projects.entries.6.demo"></span>
@@ -578,7 +602,7 @@
               <section class="tags">
                 <span class="status" data-key="projects.entries.7.status"></span>
                 <section class="links">
-                  <a  href="#projects" class="code-btn">Code</a>
+                  <a target="_blank" href="#projects" class="code-btn">Code</a>
                   <span class="tooltip" data-key="projects.entries.7.link"></span>
                   <a  href="#projects" class="demo-btn">Demo</a>
                   <span class="tooltip" data-key="projects.entries.7.demo"></span>
@@ -593,12 +617,28 @@
 
     <!-- Footer  -->
     <footer id="footer">
-      <p data-key="footer.quote"></p>
+      <h3 data-key="footer.quote" class="footer-quote"></h3>
       <ul class="social-links">
-        <li><a href="#" data-key="contact.email">Email</a></li>
-        <li><a href="#" data-key="contact.linkedin">LinkedIn</a></li>
-        <li><a href="#" data-key="contact.github">GitHub</a></li>
-        <li><a href="#" data-key="contact.portfolio">Portafolio</a></li>
+        <li><a target="_blank" href="mailto:ma.ga.ol@hotmial.com">
+          <span class="material-symbols-outlined contact-icon">email</span>
+          <span class="tooltip" data-key="contact.email"></span>
+        </a></li>
+        <li><a target="_blank" href="https://de.linkedin.com/in/mauriciogolagaray/en">
+          <span class="contact-icon svg-icon"><svg width="24" height="24" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+            <path xmlns="http://www.w3.org/2000/svg" d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"/>
+        </svg></span>
+          <span class="tooltip"  data-key="contact.linkedin"></span>
+        </a></li>
+        <li><a target="_blank" href="https://github.com/MauGarOla">
+          <span class="contact-icon svg-icon"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.66-.22.66-.48v-1.69c-2.78.6-3.37-1.34-3.37-1.34-.45-1.14-1.1-1.45-1.1-1.45-.9-.61.07-.6.07-.6 1 .07 1.53 1.04 1.53 1.04.88 1.51 2.3 1.07 2.86.82.09-.64.34-1.07.62-1.31-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.43 9.43 0 0 1 12 6.8c.85.004 1.71.11 2.5.32 1.9-1.29 2.74-1.02 2.74-1.02.55 1.38.2 2.4.1 2.65.64.7 1.02 1.6 1.02 2.69 0 3.84-2.34 4.69-4.57 4.94.36.31.67.92.67 1.85v2.75c0 .26.16.58.67.48A10.004 10.004 0 0 0 22 12c0-5.52-4.48-10-10-10z"/>
+        </svg></span>
+          <span class="tooltip" data-key="contact.github"></span>
+        </a></li>
+        <li><a target="_blank" href="https://mauolagarayportfolio.netlify.app">
+          <span class="material-symbols-outlined contact-icon">description</span>
+          <span class="tooltip" data-key="contact.resume"></span>
+        </a></li>
       </ul>
       <p data-key="footer.copyright"></p>
     </footer>

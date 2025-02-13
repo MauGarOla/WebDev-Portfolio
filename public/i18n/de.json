@@ -291,12 +291,12 @@
         ]
         },
         "contact": {
-        "section": "Kontakt",
-        "email": "<strong>ma.ga.ol@hotmail.com</strong>",
-        "linkedin": "<strong>https://de.linkedin.com/in/mauriciogolagaray/en</strong>",
-        "github": "<strong>https://github.com/MauGarOla</strong>",
-        "portfolio": "<strong>https://mauolagarayportfolio.netlify.app</strong>",
-        "resume": "<strong>Lebenslauf</strong>"
+        "section": "Contacto",
+        "email": "Email",
+        "linkedin": "LinkedIn",
+        "github": "Github",
+        "portfolio": "Portfolio",
+        "resume": "Lebenslauf"
         },
         "footer": {
         "quote": "Höre niemals auf zu lernen, denn die Technologie hört niemals auf, sich weiterzuentwickeln.",

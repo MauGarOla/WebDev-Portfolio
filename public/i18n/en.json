@@ -291,12 +291,12 @@
     ]
     },
     "contact": {
-      "section": "Contact",
-      "email": "<strong>ma.ga.ol@hotmail.com</strong>",
-      "linkedin": "<strong>https://de.linkedin.com/in/mauriciogolagaray/en</strong>",
-      "github": "<strong>https://github.com/MauGarOla</strong>",
-      "portfolio": "<strong>https://mauolagarayportfolio.netlify.app</strong>",
-      "resume": "<strong>Resume</strong>"
+      "section": "Contacto",
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "github": "Github",
+      "portfolio": "Portfolio",
+      "resume": "Resume"
     },
     "footer": {
       "quote": "Never stop learning because technology never stops evolving.",

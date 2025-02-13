@@ -292,11 +292,11 @@
     },
     "contact": {
       "section": "Contacto",
-      "email": "<strong>ma.ga.ol@hotmail.com</strong>",
-      "linkedin": "<strong>https://de.linkedin.com/in/mauriciogolagaray/en</strong>",
-      "github": "<strong>https://github.com/MauGarOla</strong>",
-      "portfolio": "<strong>https://mauolagarayportfolio.netlify.app</strong>",
-      "resume": "<strong>Curriculum</strong>"
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "github": "Github",
+      "portfolio": "Portfolio",
+      "resume": "Curriculum"
     },
     "footer": {
       "quote": "Nunca dejes de aprender, porque la tecnología nunca deja de evolucionar.",

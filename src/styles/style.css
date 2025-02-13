@@ -96,10 +96,18 @@ main > section {
 
 h1 {
   font-size: clamp(2rem, 7vw, 5rem);
+  color: var(--action);
 }
 
 h2 {
   font-size: clamp(1.5rem, 5vw, 4rem);
+  color: var(--action);
+}
+
+h2::before {
+  content: "// ";
+  font-size: clamp(1.5rem, 5vw, 4rem);
+  color: var(--action);
 }
 
 h3 {
@@ -253,13 +261,17 @@ button {
 /* Hero */
 
 #hero {
-  margin: 10vh auto 20vh;
+  margin: 2vh auto 20vh;
   display: flex;
   justify-content: space-between;
 }
 
 #hero p {
   font-size: clamp(0.5rem, 3vw, 2.5rem);
+}
+
+#hero .social-links {
+  margin: 25px auto 25px 25px;
 }
 
 .avatar {
@@ -403,6 +415,17 @@ button {
   position: absolute;
 }
 
+#journey label.journey-zoom::before {
+  content: "";
+  width: 5%;
+  height: 1%;
+  background: var(--action);
+  position: absolute;
+  top: 15%;
+  right: 23%;
+  z-index: 1;
+}
+
 #journey label.journey-zoom img {
   width: clamp(150px, 40vw, 500px);
   margin-left: 35vw;
@@ -412,6 +435,11 @@ button {
 
 #journey label.journey-zoom img:hover {
   transform: translateY(-140px) scale(1);
+}
+
+
+#journey label.journey-zoom:hover ~ .tooltip {
+  display: inline;
 }
 
 #journey ul {
@@ -427,7 +455,6 @@ button {
   margin-inline: auto;
 }
 
-/* line */
 #journey ul::before {
   content: "";
   grid-column: 1;
@@ -437,14 +464,10 @@ button {
   filter: brightness(.8) saturate(.6);
 }
 
-/* columns*/
-
-/* row gaps */
 #journey ul li:not(:last-child) {
   margin-bottom: var(--row-gap);
 }
 
-/* card */
 #journey ul li {
   grid-column: 2;
   --inlineP: 1.5rem;
@@ -497,27 +520,21 @@ body #journey ul li:nth-child(7) .journey-date {
   filter: brightness(1.6) saturate(1.6);
 }
 
-/* date */
 #journey ul li .journey-date {
   --dateH: 3rem;
   height: var(--dateH);
   margin-inline: calc(var(--inlineP) * -1);
-
   text-align: center;
   background-color: var(--accent-color);
-
   color: var(--text-primary);
   font-size: 1.25rem;
   font-weight: 700;
-
   display: grid;
   place-content: center;
   position: relative;
-
   border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
 }
 
-/* date flap */
 #journey ul li .journey-date::before {
   content: "";
   width: var(--inlineP);
@@ -526,12 +543,10 @@ body #journey ul li:nth-child(7) .journey-date {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
   position: absolute;
   top: 100%;
-
   clip-path: polygon(0 0, 100% 0, 0 100%);
   right: 0;
 }
 
-/* circle */
 #journey ul li .journey-date::after {
   content: "";
   position: absolute;
@@ -541,12 +556,10 @@ body #journey ul li:nth-child(7) .journey-date {
   border: 0.3rem solid var(--accent-color);
   border-radius: 50%;
   top: 50%;
-
   transform: translate(50%, -50%);
   right: calc(100% + var(--col-gap) + var(--line-w) / 2);
 }
 
-/* title descr */
 #journey ul li .journey-title,
 #journey ul li .journey-text {
   position: relative;
@@ -579,7 +592,6 @@ body #journey ul li:nth-child(7) .journey-date {
     grid-column: 3;
   }
 
-  /* start second card */
   #journey  ul li:nth-child(2) {
     grid-row: 2/4;
   }
@@ -638,23 +650,24 @@ article {
   justify-content: space-between;
   gap: 50px;
   width: 80%;
-  height: 70%;
+  height: 80%;
   top: 0;
   padding: 3% 10% 3%;
   color: var(--text-primary);
   background-color: var(--text-background);
   backdrop-filter: blur(5px);
-  transform: translateY(105%);
+  transform: translateY(90%);
   transition: transform .5s ease-in-out;
 }
 
 .image-text:hover {
-  transform: translateY(30%);
+  transform: translateY(15%);
 }
 
 .project-header {
   display: flex;
   justify-content: space-between;
+  align-items: start;
 }
 
 .project-header h3 {
@@ -668,7 +681,7 @@ article {
   align-items: end;
   gap: 10px;
   padding: 0;
-  margin: 0;
+  margin: 10px 0;
 }
 
 .stack li {
@@ -777,7 +790,55 @@ article {
   backdrop-filter: blur(3px);
   box-sizing: border-box;
 }
+.footer-quote {
+  color: var(--action);
+}
 
 .social-links {
   list-style: none;
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: start;
+  margin: 25px auto;
+  width: 300px;
+  top: 5px;
+  padding: 5px 10px;
+  border-radius: 30px;
+  backdrop-filter: blur(4px);
+  box-sizing: border-box;
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 10px;
+  border-radius: 22px;
+  transition: 0.4s all ease-in-out;
+}
+
+.contact-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.contact-icon:hover {
+  background: var(--action);
+  transform: translateY(25px) scale(1.5);
+}
+
+.contact-icon ~ .tooltip {
+  top: 0px;
+}
+
+.contact-icon:hover ~ .tooltip {
+  display: inline;
+  transform: translate(-30px, -20px);
+}
+
+.svg-icon {
+  fill: var(--text-primary);
 }
