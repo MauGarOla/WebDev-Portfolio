@@ -25,8 +25,9 @@
   },
   "journey": {
       "section": "Trayectoria",
-    "short": {
-      "section": "Resumen",
+      "tooltip": "Descubre los detalles",
+      "short": {
+        "section": "Resumen",
       "entries": 
       [{
         "year": "Por venir",

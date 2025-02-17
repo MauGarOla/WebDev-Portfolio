@@ -532,23 +532,130 @@ button {
   display: block;
 }
 
+/* switch */
+
 #journey label.journey-zoom {
   position: absolute;
+  right: 0;
+  transform: translate(-5vw, -10vh);
 }
 
-#journey label.journey-zoom img {
-  width: clamp(150px, 40vw, 500px);
-  margin-left: 35vw;
-  transform: translateY(-140px) scale(.8);
-  transition: all .4s ease-in-out;
+.zip-file-border figure {
+  margin: 0;
 }
 
-#journey label.journey-zoom img:hover {
-  transform: translateY(-140px) scale(1);
+.zip-file-border {
+  margin: 0;
+  position: relative;
+  background: var(--action);
+  border: 4px color-mix(in srgb, var(--action) 10%, black) solid;
+  width: 150px;
+  height: 200px;
+  clip-path: polygon(0 0, 66.66% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
+  border-radius: 3%;
 }
 
+.zip-file-corner {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background-color: color-mix(in srgb, var(--action) 10%, black);
+  right: 0;
+  top: 0;
+  border-radius: 0 0 0 20%;
+}
 
-#journey label.journey-zoom:hover ~ .tooltip {
+.zip-file-zipper-line {
+  position: absolute;
+  width: 50%;
+  height: 150px;
+  border-color: color-mix(in srgb, var(--action) 10%, black);
+  border-width: 6px;
+  border-style: dotted none none dotted;
+  transition: .3s ease-in-out border-radius;
+  box-sizing: border-box;
+}
+
+.left {
+  transform: scaleX(-1);
+  top: -10px;
+}
+
+.right {
+  top: -18px;
+  right: 0px
+}
+
+#journey-switcher:hover + label .zip-file-zipper-line {
+  border-radius: 50% 0 0 0;
+}
+
+#journey-switcher:checked + label .zip-file-zipper-line {
+  border-radius: 100% 0 0 0;
+}
+
+#journey-switcher:checked:hover + label .zip-file-zipper-line {
+  border-radius: 70% 0 0 0;
+}
+
+.zip-file-slider {
+  position: absolute;
+  background-color: transparent;
+  width: 20px;
+  height: 30px;
+  top: 0;
+  left: 43%;
+  border-color: color-mix(in srgb, var(--action) 10%, black);
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 50% 50% 40% 40% / 60% 60% 20% 20%;
+  transition: .3s ease-in-out top;
+  box-sizing: border-box;
+  animation: infinite 2s ease-in-out swing;
+  transform-origin: top center;
+}
+
+@keyframes swing {
+  25% {
+    transform: rotate(-30deg);
+  }
+
+  75% {
+    transform: rotate(30deg);
+  }
+}
+
+#journey-switcher:hover + label .zip-file-slider {
+  top: 40px;
+}
+
+#journey-switcher:checked + label .zip-file-slider {
+  top: 140px
+}
+
+#journey-switcher:checked:hover + label .zip-file-slider {
+  top: 90px
+}
+
+.zip-file-text {
+  position: absolute;
+  bottom: 0 ;
+  font-weight: 900;
+  font-size: xxx-large;
+  padding: 0;
+  color: color-mix(in srgb, var(--action) 90%, black);
+}
+
+/* switch */
+
+
+.zip-file-border ~ .tooltip {
+  display: none;
+  top: 0;
+  transform: translateY(-50px);
+}
+
+.zip-file-border:hover ~ .tooltip {
   display: inline;
 }
 
@@ -590,7 +697,6 @@ button {
 #journey ul li {
   --accent-color: var(--action);
 }
-
 
 #journey ul li:nth-child(2) .journey-date {
   --accent-color: color-mix(in srgb, var(--action) 90%, var(--background-primary));

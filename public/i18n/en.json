@@ -25,6 +25,7 @@
   },
   "journey": {
     "section": "Journey",
+    "tooltip": "See details",
     "short": {
       "section": "Summary",
       "entries": 
