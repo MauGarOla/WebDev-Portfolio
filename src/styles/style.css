@@ -339,7 +339,8 @@ button {
 	justify-content: center;
   transform-style: preserve-3d;
   transition: all 1.5s;
-  float: right;
+  float: left;
+  padding: 5px;
   margin-left: 5px;
   margin-right: 20px;
   perspective: 1000px;
@@ -350,17 +351,54 @@ button {
   transform: rotateX(180deg);
 }
 
-#about img {
+#about svg {
   width: 30vw;
   height: 30vw;
   max-width: 300px;
   max-height: 300px;
-  backface-visibility: hidden;
   position: absolute;
+  backface-visibility: hidden;
 }
 
 .coin-tails {
   transform: rotateX(180deg);
+}
+
+.about-draw-background {
+  fill: color-mix(in srgb, var(--action) 50%, white);
+  stroke: color-mix(in srgb, var(--action) 10%, black);
+}
+
+.about-draw-dark,
+.about-draw-background-details,
+.about-draw-book {
+  fill: color-mix(in srgb, var(--action) 60%, black);
+}
+
+.about-draw-background-circle {
+  stroke: color-mix(in srgb, var(--action) 60%, black);
+}
+
+.about-draw-light,
+.about-draw-screen-light,
+.about-draw-arrow {
+  fill: color-mix(in srgb, var(--action) 60%, white);
+}
+
+.about-draw-screen-dark {
+  fill: color-mix(in srgb, var(--action) 80%, white);
+}
+
+.about-draw-black,
+.about-draw-background-main,
+.about-draw-text {
+  fill: color-mix(in srgb, var(--action) 10%, black);
+}
+
+.about-draw-white,
+.about-draw-computer,
+.about-draw-vegan {
+  fill: color-mix(in srgb, var(--action) 10%, white);
 }
 
 /* Skills */
