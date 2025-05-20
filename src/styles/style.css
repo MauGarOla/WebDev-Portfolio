@@ -96,12 +96,16 @@ main > section {
 
 h1 {
   font-size: clamp(2rem, 7vw, 5rem);
-  color: var(--action);
 }
 
 h2 {
   font-size: clamp(1.5rem, 5vw, 4rem);
+}
+
+h1, h2, h3 {
   color: var(--action);
+  text-shadow: -3px 4px 6px color-mix(in srgb, var(--action) 60%, black);
+  animation: float 7s infinite alternate;
 }
 
 h2::before {
@@ -115,7 +119,9 @@ h3 {
 }
 
 h4 {
-
+  font-size: clamp(1rem, 3vw, 2rem);
+  margin: 5px 0;
+  padding: 0;
 }
 
 h5 {
@@ -322,13 +328,17 @@ button {
 
 @keyframes float {
   to {
-    transform: translate(5px, -16px);
+    transform: translate(4px, -12px);
   }
 }
 
 /* About */
 
-#about .coin, #about .spin {
+#about .coin {
+  filter: drop-shadow(-3px 4px 6px color-mix(in srgb, var(--action) 60%, black));
+}
+
+#about .spin {
   width: 30vw;
   height: 30vw;
   max-width: 300px;
@@ -348,7 +358,7 @@ button {
 }
 
 #about .coin:hover .spin{
-  transform: rotateX(180deg);
+  transform: rotateX(180deg) translate3d(0,0,0);
 }
 
 #about svg {
@@ -361,7 +371,7 @@ button {
 }
 
 .coin-tails {
-  transform: rotateX(180deg);
+  transform: rotateX(180deg) translate3d(0,0,0);
 }
 
 .about-draw-background {
@@ -526,22 +536,18 @@ button {
   overflow: visible;
 }
 
-.block:hover {
+.block:active {
   margin-top: 35px;
   margin-bottom: 35px;
 }
 
 .block-grid:hover .block:not(:hover) {
-  filter: brightness(.9);
-}
-
-.block:hover .block-text {
-  
+  filter: brightness(.8);
 }
 
 .block-text {
   position: absolute;
-  top: 40%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--text-primary);
@@ -570,12 +576,13 @@ button {
   display: block;
 }
 
-/* switch */
+/* switch zip*/
 
 #journey label.journey-zoom {
   position: absolute;
   right: 0;
   transform: translate(-5vw, -10vh);
+  filter: drop-shadow(-3px 4px 6px color-mix(in srgb, var(--action) 60%, black));
 }
 
 .zip-file-border figure {
@@ -651,6 +658,7 @@ button {
   box-sizing: border-box;
   animation: infinite 2s ease-in-out swing;
   transform-origin: top center;
+  filter: drop-shadow(-3px 4px 6px color-mix(in srgb, var(--action) 60%, black));
 }
 
 @keyframes swing {
@@ -1008,7 +1016,7 @@ article {
   display: block;
 }
 
-/* contact me */
+/* contact me  footer*/
 
 #footer {
   padding: 20px 0;
@@ -1022,11 +1030,11 @@ article {
   width: 80%;
   padding: 5px 10px;
   border-radius: 30px 30px 0 0px;
-  /* backdrop-filter: blur(3px); */
   box-sizing: border-box;
 }
+
 .footer-quote {
-  color: var(--action);
+  text-shadow: -1px 2px 4px color-mix(in srgb, var(--action) 60%, black);
 }
 
 .social-links {
