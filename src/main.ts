@@ -4,41 +4,48 @@ const iconContainers = document.querySelectorAll(".icon-container");
 let closeTimeout: number | null = null;
 
 const closeDropdowns = () => {
-    document.querySelectorAll(".dropdown").forEach(dropdown => {
-        dropdown.classList.remove("open");
-    });
+  document.querySelectorAll(".dropdown").forEach(dropdown => {
+    dropdown.classList.remove("open");
+  });
 };
 
 iconContainers.forEach(icon => {
-    icon.addEventListener("click", (event) => {
-        event.stopPropagation();
+  const dropdown = icon.querySelector(".dropdown") as HTMLElement;
+  if (!dropdown) return;
 
-        const dropdown = icon.querySelector(".dropdown") as HTMLElement;
-        if (!dropdown) return;
+  let hovered = false;
 
-        const isOpen = dropdown.classList.contains("open");
-        closeDropdowns();
+  icon.addEventListener("click", (event) => {
+    event.stopPropagation();
 
-        if (!isOpen) {
-            dropdown.classList.add("open");
+    const isOpen = dropdown.classList.contains("open");
+    closeDropdowns();
+
+    if (!isOpen) {
+      dropdown.classList.add("open");
+      hovered = false;
+
+      closeTimeout = setTimeout(() => {
+        if (!hovered) {
+          dropdown.classList.remove("open");
         }
-    });
+      }, 1500);
+    }
+  });
 
-    const dropdown = icon.querySelector(".dropdown") as HTMLElement;
-    if (!dropdown) return;
+  dropdown.addEventListener("mouseenter", () => {
+    if (closeTimeout) {
+      clearTimeout(closeTimeout);
+      closeTimeout = null;
+    }
+    hovered = true;
+  });
 
-    dropdown.addEventListener("mouseenter", () => {
-        if (closeTimeout) {
-            clearTimeout(closeTimeout);
-            closeTimeout = null;
-        }
-    });
-
-    dropdown.addEventListener("mouseleave", () => {
-        closeTimeout = setTimeout(() => {
-            dropdown.classList.remove("open");
-        }, 300);
-    });
+  dropdown.addEventListener("mouseleave", () => {
+    closeTimeout = setTimeout(() => {
+      dropdown.classList.remove("open");
+    }, 300);
+  });
 });
 
 document.addEventListener("scroll", closeDropdowns);

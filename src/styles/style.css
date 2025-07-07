@@ -129,6 +129,10 @@ h5 {
   padding: 0;
 }
 
+button {
+  user-select: none;
+}
+
 /* Navbar */
 
 .material-symbols-outlined {
@@ -153,10 +157,14 @@ nav {
   backdrop-filter: blur(4px);
   z-index: 1;
   box-sizing: border-box;
+  user-select: none;
 }
 
 .dropdown {
-  display: none;
+  opacity: 0;
+  transform: translateY(-50px) scale(.3);
+  pointer-events: none;
+  transition: all 0.25s cubic-bezier(1,.25,.5,1.5);
   top: 90px;
   position: absolute;
   border-radius: 30px;
@@ -166,7 +174,9 @@ nav {
 }
 
 .dropdown.open {
-  display: block;
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
 }
 
 .icon-container:hover .nav-icon,
@@ -187,7 +197,7 @@ nav {
 .nav-icon {
   padding: 10px;
   border-radius: 22px;
-  transition: .4s all ease-in-out;
+  transition: .25s transform cubic-bezier(1,.25,.5,1.5);
 }
 
 .nav-icon:hover {
@@ -201,10 +211,10 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .tooltip {
-  display: none;
-  transition: all .3s ease-in-out;
+  opacity: 0;
+  transition: all .25s cubic-bezier(1,.25,.5,1.5);
   position: absolute;
-  transform: translate(20px, -5px);
+  transform: translate(0px, -5px);
   background: var(--background-secondary);
   border-radius: 25px;
   padding: 5px 10px;
@@ -214,6 +224,8 @@ a:link, a:visited, a:hover, a:active {
 
 .list-icon:hover ~ .tooltip {
   display: inline;
+  opacity: 1;
+  transform: translate(20px, -5px);
 }
 
 button {
