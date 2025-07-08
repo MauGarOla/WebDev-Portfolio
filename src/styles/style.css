@@ -100,6 +100,7 @@ h1 {
 
 h2 {
   font-size: clamp(1.5rem, 5vw, 4rem);
+  margin-bottom: 10vh;
 }
 
 h1, h2, h3 {
@@ -346,6 +347,10 @@ button {
 
 /* About */
 
+#about {
+  height: 60vh;
+}
+
 #about .coin {
   filter: drop-shadow(-3px 4px 6px color-mix(in srgb, var(--action) 60%, black));
 }
@@ -424,6 +429,10 @@ button {
 }
 
 /* Skills */
+
+#skills {
+  height: 60vh;
+}
 
 .block-grid {
   --block-grid-columns: 10;
@@ -548,7 +557,7 @@ button {
   overflow: visible;
 }
 
-.block:active {
+.block:hover {
   margin-top: 35px;
   margin-bottom: 35px;
 }
@@ -593,8 +602,14 @@ button {
 #journey label.journey-zoom {
   position: absolute;
   right: 0;
-  transform: translate(-5vw, -10vh);
+  transform: translate(-5vw, -10vh) rotate(3deg);
   filter: drop-shadow(-3px 4px 6px color-mix(in srgb, var(--action) 60%, black));
+}
+
+@media (460px <= width <= 660px) {
+  #journey label.journey-zoom {
+  transform: translate(-5vw, -20vh) scale(.7) rotate(3deg);
+}
 }
 
 .zip-file-border figure {
@@ -629,7 +644,7 @@ button {
   border-color: color-mix(in srgb, var(--action) 10%, black);
   border-width: 6px;
   border-style: dotted none none dotted;
-  transition: .3s ease-in-out border-radius;
+  transition: .3s cubic-bezier(0, -0.25, 1, 1.25) border-radius;
   box-sizing: border-box;
 }
 
@@ -666,20 +681,21 @@ button {
   border-width: 10px;
   border-style: solid;
   border-radius: 50% 50% 40% 40% / 60% 60% 20% 20%;
-  transition: .3s ease-in-out top;
+  transition: .3s cubic-bezier(0, -0.25, 1, 1.25) top;
   box-sizing: border-box;
-  animation: infinite 2s ease-in-out swing;
+  animation: infinite 2s cubic-bezier(0, -0.25, 1, 1.25) swing;
   transform-origin: top center;
+  transform: rotate(3deg);
   filter: drop-shadow(-3px 4px 6px color-mix(in srgb, var(--action) 60%, black));
 }
 
 @keyframes swing {
   25% {
-    transform: rotate(-30deg);
+    transform: rotate(-33deg);
   }
 
   75% {
-    transform: rotate(30deg);
+    transform: rotate(27deg);
   }
 }
 

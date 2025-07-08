@@ -233,14 +233,16 @@ document.addEventListener('DOMContentLoaded', async () => {
 //Download Resume
 
 const updateDownloadLink = (lang: string) => {
-  const downloadLink = document.getElementById('download') as HTMLAnchorElement;
-  if (downloadLink) {
-    const basePath = '/src/assets/resumes/';
-    const fileName = `CV - Mauricio G. Olagaray.${lang}.pdf`;
+  const downloadLinks = document.querySelectorAll('.download-link') as NodeListOf<HTMLAnchorElement>;
 
-    downloadLink.href = `${basePath}${fileName}`;
-    downloadLink.download = fileName;
-  }
+  const basePath = '/src/assets/resumes/';
+  const fileName = `CV - Mauricio G. Olagaray.${lang}.pdf`;
+  const fullPath = `${basePath}${fileName}`;
+
+  downloadLinks.forEach(link => {
+    link.href = fullPath;
+    link.download = fileName;
+  });
 };
 
 
