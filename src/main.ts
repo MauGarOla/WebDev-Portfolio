@@ -212,6 +212,7 @@ const setLanguage = async (lang: string): Promise<void> => {
   const langData = await translations[lang];
   localStorage.setItem('lang', lang);
   applyTranslations(langData);
+  updateDownloadLink(lang);
 };
 
 document.querySelectorAll('.lang-switch').forEach((button) => {
@@ -228,6 +229,20 @@ document.addEventListener('DOMContentLoaded', async () => {
   const langData = await translations[savedLang];
   applyTranslations(langData);
 });
+
+//Download Resume
+
+const updateDownloadLink = (lang: string) => {
+  const downloadLink = document.getElementById('download') as HTMLAnchorElement;
+  if (downloadLink) {
+    const basePath = '/src/assets/resumes/';
+    const fileName = `CV - Mauricio G. Olagaray.${lang}.pdf`;
+
+    downloadLink.href = `${basePath}${fileName}`;
+    downloadLink.download = fileName;
+  }
+};
+
 
 //Translations finish
 
