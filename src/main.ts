@@ -82,7 +82,7 @@ const setTheme = (theme: "light" | "dark" | "system") => {
       body.classList.add("dark");
     }
   }
-  
+
   localStorage.setItem("theme", theme);
 };
 
@@ -122,11 +122,15 @@ document.addEventListener("DOMContentLoaded", () => {
   
       const pixel = ctx.getImageData(0, y, 1, 1).data;
       const color = `rgb(${pixel[0]}, ${pixel[1]}, ${pixel[2]})`;
-  
+
+      localStorage.setItem('yIndicator', y.toString())
+
       document.body.style.setProperty("--action", color);
     };
+
+    
   
-    const aplicarGradiente = () => {
+    const applyGradient = () => {
       const body = document.body;
       const gradientColor1 = getComputedStyle(body).getPropertyValue('--color-picker1').trim();
       const gradientColor2 = getComputedStyle(body).getPropertyValue('--color-picker2').trim();
@@ -148,12 +152,19 @@ document.addEventListener("DOMContentLoaded", () => {
   
     };
   
-    aplicarGradiente();
-  
-    const observer = new MutationObserver(() => aplicarGradiente());
+    applyGradient();
+    
+    const observer = new MutationObserver(() => {
+      applyGradient();
+      
+      const canvas = document.getElementById("color-picker") as HTMLCanvasElement;
+      const yIndicator = Number(localStorage.getItem('yIndicator')) || Math.floor(canvas.height * 0.1);
+
+      setIndicatorPosition(yIndicator);
+    });
     observer.observe(document.body, { attributes: true, attributeFilter: ["class"] });
-  
-    const initialY = Math.floor(canvas.height * 0.1);
+
+    const initialY = Number(localStorage.getItem('yIndicator')) || Math.floor(canvas.height * 0.1);
     setIndicatorPosition(initialY);
   
     canvas.addEventListener("mousedown", (event) => {
@@ -170,7 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("mouseup", () => {
       isDragging = false;
     });
-  }, 200)
+  }, 150)
 });
 
 //Color-Selector finish
@@ -246,7 +257,6 @@ const updateDownloadLink = (lang: string) => {
   });
 };
 
-
 //Translations finish
 
 
@@ -276,4 +286,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   updateVisibility(currentIndex); 
+});
+
+//Await
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.body.classList.add("ready");
 });
