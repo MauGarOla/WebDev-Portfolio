@@ -228,6 +228,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const savedLang = localStorage.getItem('lang') || 'en';
   const langData = await translations[savedLang];
   applyTranslations(langData);
+  updateDownloadLink(savedLang);
 });
 
 //Download Resume
